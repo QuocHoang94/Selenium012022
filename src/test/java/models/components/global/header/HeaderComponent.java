@@ -19,6 +19,7 @@ public class HeaderComponent extends Component {
     }
 
     public WebElement searchInputElem() {
+        System.out.println(this.component);
         return this.component.findElement(searchInputSel);
     }
 
@@ -26,7 +27,7 @@ public class HeaderComponent extends Component {
         return this.component.findElement(searchInputBtnSel);
     }
 
-    public int allLinksNumber(){
+    public int allLinksNumber() {
         return this.component.findElements(allLinkSel).size();
     }
 }

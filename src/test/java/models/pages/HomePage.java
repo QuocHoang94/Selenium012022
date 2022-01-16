@@ -2,7 +2,6 @@ package models.pages;
 
 import models.components.global.header.HeaderComponent;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
 
