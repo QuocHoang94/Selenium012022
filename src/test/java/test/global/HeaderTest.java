@@ -5,15 +5,13 @@ import models.components.global.header.HeaderComponent;
 import models.pages.HomePage;
 import models.pages.RegisterPage;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 import url.Urls;
 
 public class HeaderTest implements Urls {
-    public static void main(String[] args) {
-        testHomepageHeader();
-//        testRegisterPageHeader();
-    }
 
-    private static void testHomepageHeader() {
+    @Test
+    private void testHomepageHeader() {
         WebDriver driver = DriverFactory.getChromeDriver();
         driver.get(BASE_URL.concat(HOME_PAGE));
         try {
@@ -33,7 +31,8 @@ public class HeaderTest implements Urls {
         }
     }
 
-    private static void testRegisterPageHeader() {
+    @Test
+    private void testRegisterPageHeader() {
         WebDriver driver = DriverFactory.getChromeDriver();
         driver.get(BASE_URL.concat(REGISTER_PAGE));
         try {

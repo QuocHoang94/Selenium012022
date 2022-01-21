@@ -14,8 +14,8 @@ public class GenericTestFlow {
     public void testFooterColunm(FooterColumnComponent footerColumnComponent) {
         System.out.println(footerColumnComponent.headerElem().getText());
         footerColumnComponent.linkElems().forEach(linkElem -> {
-            System.out.print(linkElem.getText() + " | ");
-            System.out.println(linkElem.getAttribute("href"));
+//            System.out.print(linkElem.getText() + " | ");
+//            System.out.println(linkElem.getAttribute("href"));
         });
     }
 }
