@@ -11,23 +11,26 @@ public class HeaderComponent extends Component {
 
     private static final By searchInputSel = By.cssSelector("form input");
     private static final By searchInputBtnSel = By.cssSelector(".search-box-button");
-    private static final By allLinkSel = By.tagName("a");
+    private static final By allLinksSel = By.tagName("a");
 
     public HeaderComponent(WebDriver driver, WebElement element) {
         super(driver, element);
         this.driver = driver;
     }
 
-    public WebElement searchInputElem() {
-        System.out.println(this.component);
+    public LogoComponent logoComp(){
+        return findComponent(LogoComponent.class, driver);
+    }
+
+    public WebElement searchInputElem(){
         return this.component.findElement(searchInputSel);
     }
 
-    public WebElement searchInputBtn() {
+    public WebElement searchInputBtn(){
         return this.component.findElement(searchInputBtnSel);
     }
 
-    public int allLinksNumber() {
-        return this.component.findElements(allLinkSel).size();
+    public int allLinksNumber(){
+        return this.component.findElements(allLinksSel).size();
     }
 }

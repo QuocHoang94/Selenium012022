@@ -1,39 +1,25 @@
 package test.global;
 
-import driver.DriverFactory;
-import models.components.global.footer.*;
+import models.pages.CategoryPage;
 import models.pages.HomePage;
-import org.openqa.selenium.WebDriver;
+import models.pages.RegisterPage;
 import org.testng.annotations.Test;
+import test.BaseTest;
+import test_flow.global.FooterTestFlow;
 import url.Urls;
 
-public class FooterTest implements Urls {
+import java.security.SecureRandom;
+import java.util.Arrays;
+import java.util.List;
+
+public class FooterTest extends BaseTest implements Urls {
 
     @Test
     public void testHomepageFooter() {
-        WebDriver driver = DriverFactory.getChromeDriver();
         driver.get(BASE_URL.concat(HOME_PAGE));
         try {
-            HomePage homePage = new HomePage(driver);
-
-            FooterComponent footerComponent = homePage.footerComponent();
-
-            InformationColunmComponent informationColunmComponent =
-                    footerComponent.informationColunmComponent();
-            CustomerServiceColunmComponent customerServiceColumnComp =
-                    footerComponent.customerServiceColunmComponent();
-            AccountColunmComponent accountColunmComponent =
-                    footerComponent.accountColunmComponent();
-            FolllowUsColunmComponent folllowUsColunmComponent =
-                    footerComponent.folllowUsColunmComponent();
-
-            GenericTestFlow genericTestFlow = new GenericTestFlow(driver);
-            genericTestFlow.testFooterColunm(informationColunmComponent);
-            genericTestFlow.testFooterColunm(customerServiceColumnComp);
-            genericTestFlow.testFooterColunm(accountColunmComponent);
-            genericTestFlow.testFooterColunm(folllowUsColunmComponent);
-            Thread.sleep(3000);
-
+            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+            footerTestFlow.verifyFooterComponent(HomePage.class);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -41,5 +27,31 @@ public class FooterTest implements Urls {
         }
     }
 
+    @Test
+    public void testRegisterPageFooter() {
+        driver.get(BASE_URL.concat(REGISTER_PAGE));
+        try {
+            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+            footerTestFlow.verifyFooterComponent(RegisterPage.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            driver.quit();
+        }
+    }
 
+    @Test
+    public void testCategoryPageFooter() {
+        List<String> categorySlugs = Arrays.asList("/books", "/computers", "/electronics");
+        String randomSlug = categorySlugs.get(new SecureRandom().nextInt(categorySlugs.size()));
+        driver.get(BASE_URL.concat(randomSlug));
+        try {
+            FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
+            footerTestFlow.verifyFooterComponent(CategoryPage.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            driver.quit();
+        }
+    }
 }
