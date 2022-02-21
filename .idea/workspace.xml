@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8898ae74-0fc8-4883-a29c-35dd6c01e51f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Button.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Dropdown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/DropdownList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/DynamicControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/DynamicControlElementInScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/DynamicControlExplicitWait.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/FormHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Iframe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/JSAlert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/LinkText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/MouseHover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/PageUrlTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Pracetice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Practive2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/Practive_JSAlert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/TestDropdown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_learning/iFramePractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/pages/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/LaunchBrowser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/global/FooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/global/FooterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/global/TestNGAssertionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/global/TestNGAssertionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/pom/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/url/Urls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/url/Urls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-01-21T22-39-15_561.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Regression/Global UI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Regression/Global UI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-test.global.FooterTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/Global UI.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Dropdown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/DropdownList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/DynamicControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/DynamicControlElementInScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/DynamicControlExplicitWait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/FormHandling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Iframe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/JSAlert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/LinkText$HyberLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/LinkText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/MouseHover$FigureData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/MouseHover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/PageUrlTitle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Pracetice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Practive2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/Practive_JSAlert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/TestDropdown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api_learning/iFramePractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/driver/DriverFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/drivers/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/ComponentCssSelector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/AccountColunmComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/CustomerServiceColunmComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FolllowUsColunmComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterColumnComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/InformationColunmComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/HeaderComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/LogoComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/BaseItemDetailComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/CheapComputerComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/ComputerEssentialComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/StandardComputerComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/AnnotationParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/BasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/CategoryPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/ComputerDetailsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/RegisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test-suites/Regression.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/LaunchBrowser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/FooterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/HeaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/TestNGAssertionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/order/BuyingComputerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/pages/HomePageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/pom/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/FooterTestFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/HeaderTestFlow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/url/Urls.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="25PY8BL7eHYiTbVFF9ng1jMbvcJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/test/global" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager" selected="TestNG.TestNGAssertionType.testSoftAssertion">
+    <configuration name="FooterTest" type="TestNG" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.FooterTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FooterTest.testCategoryPageFooter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.FooterTest" />
+      <option name="METHOD_NAME" value="testCategoryPageFooter" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeaderTest" type="TestNG">
+      <module name="Selenium012022" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.HeaderTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGAssertionType" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.TestNGAssertionType" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGAssertionType.testHardAssertion" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.TestNGAssertionType" />
+      <option name="METHOD_NAME" value="testHardAssertion" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGAssertionType.testSoftAssertion" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.global" />
+      <option name="MAIN_CLASS_NAME" value="test.global.TestNGAssertionType" />
+      <option name="METHOD_NAME" value="testSoftAssertion" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.HeaderTest" />
+      <item itemvalue="TestNG.FooterTest" />
+      <item itemvalue="TestNG.TestNGAssertionType" />
+      <item itemvalue="TestNG.FooterTest.testCategoryPageFooter" />
+      <item itemvalue="TestNG.TestNGAssertionType.testHardAssertion" />
+      <item itemvalue="TestNG.TestNGAssertionType.testSoftAssertion" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestNGAssertionType.testSoftAssertion" />
+        <item itemvalue="TestNG.TestNGAssertionType.testHardAssertion" />
+        <item itemvalue="TestNG.FooterTest.testCategoryPageFooter" />
+        <item itemvalue="TestNG.TestNGAssertionType" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8898ae74-0fc8-4883-a29c-35dd6c01e51f" name="Changes" comment="" />
+      <created>1645430251668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645430251668</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Selenium012022$FooterTest.ic" NAME="FooterTest Coverage Results" MODIFIED="1645457970643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.global.*</FILTER>
+    </SUITE>
+  </component>
+</project>
