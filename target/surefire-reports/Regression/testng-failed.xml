@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression]">
+  <test thread-count="5" verbose="0" name="Global UI(failed)">
+    <classes>
+      <class name="test.global.FooterTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="testCategoryPageFooter"/>
+        </methods>
+      </class> <!-- test.global.FooterTest -->
+    </classes>
+  </test> <!-- Global UI(failed) -->
+</suite> <!-- Failed suite [Regression] -->

@@ -39,6 +39,7 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestResult result) {
+
         // ONLY capture screenshot when test is failed
         if (result.getStatus() == ITestResult.FAILURE) {
             // 1. Method name
@@ -48,31 +49,33 @@ public class BaseTest {
             String methodName = result.getName();
             Calendar calendar = new GregorianCalendar();
             int y = calendar.get(Calendar.YEAR);
-            int m = calendar.get(Calendar.MONTH) + 1; // 0,....11
+            int m = calendar.get(Calendar.MONTH) + 1;
             int d = calendar.get(Calendar.DATE);
             int hr = calendar.get(Calendar.HOUR_OF_DAY);
-            int min = calendar.get(Calendar.MINUTE);
             int sec = calendar.get(Calendar.SECOND);
-            String takenDate = y + "-" + m + "-" + d + "-" + hr + "-" + min + "-" + sec;
-            String fileLocation = System.getProperty("user.dir") + "/screenshots/" + methodName + "_" + takenDate + ".png";
+            String takenDate = y + "-" + m + "-" + d + "-" + hr + "-" + m + "-" + sec;
+            String fileLocation = System.getProperty("user.dir") + "/screenshot" + methodName + "_" + takenDate + ".png";
 
-            // 2. Take screenshot
+            //2. Take screen shoot
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-            try {
-                // 3. save
-                FileUtils.copyFile(screenshot, new File(fileLocation));
 
-                // 4. Attach into allure report
+            try{
+                //3. Save
+                FileUtils.copyFile(screenshot,new File(fileLocation));
+                //4. Attach into allure report
                 Path filePath = Paths.get(fileLocation);
-                try (InputStream is = Files.newInputStream(filePath)) {
+                try(InputStream is = Files.newInputStream(filePath)){
                     Allure.addAttachment(methodName, is);
-                } catch (Exception e) {
+                }catch(Exception e){
                     e.printStackTrace();
                 }
-            } catch (Exception e) {
+
+            }catch (Exception e){
                 e.printStackTrace();
             }
         }
     }
+
+
 }

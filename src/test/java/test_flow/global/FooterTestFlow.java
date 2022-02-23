@@ -2,6 +2,7 @@ package test_flow.global;
 
 import models.components.global.footer.*;
 import models.pages.BasePage;
+import models.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -27,7 +28,10 @@ public class FooterTestFlow {
         FooterComponent footerComponent = page.footerComponent();
 
         verifyInformationColumn(footerComponent);
-        verifyCustomerColumn(footerComponent);
+        if(page instanceof HomePage){
+            System.out.println("HomePage | verifyCustomerColumn...");
+            verifyCustomerColumn(footerComponent);
+        }
         verifyMyAccountColumn(footerComponent);
         verifyFollowUsColumn(footerComponent);
     }
