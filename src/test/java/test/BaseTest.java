@@ -34,47 +34,7 @@ public class BaseTest {
 
     @AfterTest(alwaysRun = true)
     public void afterTest() {
-        driver.quit();
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void afterMethod(ITestResult result) {
-
-        // ONLY capture screenshot when test is failed
-        if (result.getStatus() == ITestResult.FAILURE) {
-            // 1. Method name
-            // methodName_yyyy-mm-dd-hh-mm-ss.png
-            // Screenshot folder: ./screenshots
-
-            String methodName = result.getName();
-            Calendar calendar = new GregorianCalendar();
-            int y = calendar.get(Calendar.YEAR);
-            int m = calendar.get(Calendar.MONTH) + 1;
-            int d = calendar.get(Calendar.DATE);
-            int hr = calendar.get(Calendar.HOUR_OF_DAY);
-            int sec = calendar.get(Calendar.SECOND);
-            String takenDate = y + "-" + m + "-" + d + "-" + hr + "-" + m + "-" + sec;
-            String fileLocation = System.getProperty("user.dir") + "/screenshot" + methodName + "_" + takenDate + ".png";
-
-            //2. Take screen shoot
-            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-
-            try{
-                //3. Save
-                FileUtils.copyFile(screenshot,new File(fileLocation));
-                //4. Attach into allure report
-                Path filePath = Paths.get(fileLocation);
-                try(InputStream is = Files.newInputStream(filePath)){
-                    Allure.addAttachment(methodName, is);
-                }catch(Exception e){
-                    e.printStackTrace();
-                }
-
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }
+//        driver.quit();
     }
 
 
