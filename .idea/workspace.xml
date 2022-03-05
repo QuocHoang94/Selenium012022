@@ -5,76 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8898ae74-0fc8-4883-a29c-35dd6c01e51f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_data/TestGson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_data/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-data/User.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Selenium012022.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Selenium012022.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-02-23T15-02-48_675.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Regression/Global UI.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Regression/Global UI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Regression/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-test.global.FooterTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/Global UI.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Regression/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/driver/DriverFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/drivers/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/ComponentCssSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/AccountColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/CustomerServiceColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FolllowUsColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterColumnComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/InformationColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/HeaderComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/LogoComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/BaseItemDetailComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/CheapComputerComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/ComputerEssentialComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/StandardComputerComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/AnnotationParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/CategoryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/ComputerDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/RegisterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test-suites/Regression.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/FooterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/HeaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/TestNGAssertionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/order/BuyingComputerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/pages/HomePageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/FooterTestFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/HeaderTestFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/url/Urls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/87b2b06e69b5435e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/a0bf86bf67822d9b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/ad494ae042052bbd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/c6533889b204f96.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugins/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/321444af-574b-417d-af88-f9f055829d94-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/37a0daf9-7f6a-4706-a5b0-a25ee5f4d3db-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/51c33f89-6faf-476c-9aa8-edac5bcda3de-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/680e5841-191b-4b75-9e60-f00767f33112-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7f509f62-3c2d-4efc-85b1-46f5ec260b5a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/848c4e58-2684-4c11-9667-f3957c69367d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/945700a9-b571-4b51-b125-27d72f3d854f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/acbf90e2-e7a5-4dee-8b61-0258425c6b07-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b8c45e91-2cfa-43b9-bbf9-d228bee66eca-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fa3bb83a-ffd5-4d08-92d1-cbc1e22f1c2b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshottestCategoryPageFooter_2022-2-23-15-2-57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/BaseItemDetailComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/BaseItemDetailComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/CheapComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/CheapComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/ComputerEssentialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/ComputerEssentialComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/StandardComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/StandardComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/pages/ComputerDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/pages/ComputerDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/order/BuyingComputerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/order/BuyingComputerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,10 +110,42 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="TestNG.FooterTest">
+  <component name="RunManager" selected="Application.TestGson">
+    <configuration name="TestGson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test_data.TestGson" />
+      <module name="Selenium012022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuyingComputerTest.testCheapCompBuying" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium012022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.order" />
+      <option name="MAIN_CLASS_NAME" value="test.order.BuyingComputerTest" />
+      <option name="METHOD_NAME" value="testCheapCompBuying" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FooterTest" type="TestNG" nameIsGenerated="true">
       <module name="Selenium012022" />
       <shortenClasspath name="NONE" />
@@ -135,34 +163,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FooterTest.testCategoryPageFooter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium012022" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.global.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="test.global" />
-      <option name="MAIN_CLASS_NAME" value="test.global.FooterTest" />
-      <option name="METHOD_NAME" value="testCategoryPageFooter" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -232,24 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNGAssertionType.testHardAssertion" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium012022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.global.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.global" />
-      <option name="MAIN_CLASS_NAME" value="test.global.TestNGAssertionType" />
-      <option name="METHOD_NAME" value="testHardAssertion" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestNGAssertionType.testSoftAssertion" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium012022" />
       <extension name="coverage">
@@ -271,19 +253,19 @@
     <list>
       <item itemvalue="TestNG.FooterTest" />
       <item itemvalue="TestNG.HeaderTest" />
-      <item itemvalue="TestNG.FooterTest.testCategoryPageFooter" />
       <item itemvalue="TestNG.FooterTest.testHomepageFooter" />
-      <item itemvalue="TestNG.TestNGAssertionType.testHardAssertion" />
       <item itemvalue="TestNG.TestNGAssertionType.testSoftAssertion" />
       <item itemvalue="TestNG.FooterTest.testRegisterPageFooter" />
+      <item itemvalue="TestNG.BuyingComputerTest.testCheapCompBuying" />
+      <item itemvalue="Application.TestGson" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestGson" />
+        <item itemvalue="TestNG.BuyingComputerTest.testCheapCompBuying" />
         <item itemvalue="TestNG.FooterTest.testRegisterPageFooter" />
         <item itemvalue="TestNG.FooterTest.testHomepageFooter" />
         <item itemvalue="TestNG.TestNGAssertionType.testSoftAssertion" />
-        <item itemvalue="TestNG.TestNGAssertionType.testHardAssertion" />
-        <item itemvalue="TestNG.FooterTest.testCategoryPageFooter" />
       </list>
     </recent_temporary>
   </component>

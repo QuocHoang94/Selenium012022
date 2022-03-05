@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Feb 23 15:03:00 ICT 2022","Wed Feb 23 15:03:01 ICT 2022","1043","Regression","Global UI","test.global.FooterTest","test.global.FooterTest","testRegisterPageFooter","testRegisterPageFooter",""
-"passed","Wed Feb 23 15:02:57 ICT 2022","Wed Feb 23 15:03:00 ICT 2022","2962","Regression","Global UI","test.global.FooterTest","test.global.FooterTest","testHomepageFooter","testHomepageFooter",""
-"failed","Wed Feb 23 15:02:55 ICT 2022","Wed Feb 23 15:02:57 ICT 2022","2310","Regression","Global UI","test.global.FooterTest","test.global.FooterTest","testCategoryPageFooter","testCategoryPageFooter",""
