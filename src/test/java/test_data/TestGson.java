@@ -1,29 +1,31 @@
 package test_data;
 
 import com.google.gson.Gson;
+import utils.data.DataObjectBuilder;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class TestGson {
     public static void main(String[] args) {
-        testFromObjectToJson();
-//        testFromJsonToObject();
+//        testFromObjectToJson();
+        testFromJsonToObject();
     }
 
     private static void testFromObjectToJson() {
-        User user  = new User("teo",20);
+        User user = new User("teo", 20);
         Gson gson = new Gson();
         System.out.println(gson.toJson(user));
     }
 
     private static void testFromJsonToObject() {
-        String userJSONObject = "{\n" +
-                "  \"name\": \"Teo\",\n" +
-                "  \"age\": 18\n" +
-                "}";
-        User user;
-        Gson gson = new Gson();
-        user = gson.fromJson(userJSONObject, User.class);
-        System.out.println(user);
+        String jsonFileLocation = "/src/test/resources/test-data/User.json";
+        User[] users = DataObjectBuilder.buildDataObjectFrom(jsonFileLocation, User[].class);
 
-        System.out.println(user.getAge() + 1);
+        for (User user : users) {
+            System.out.println(user);
+        }
     }
 }
