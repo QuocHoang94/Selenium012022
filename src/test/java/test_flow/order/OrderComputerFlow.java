@@ -26,7 +26,6 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
 
         compEssentialComponent.selectProcessorType(computerDataObject.getProcessorType());
         compEssentialComponent.selectRAMType(computerDataObject.getRam());
-        System.out.println(compEssentialComponent.productPrice());
         compEssentialComponent.setProductQuantity(55);
         compEssentialComponent.clickOnAddToCartBtn();
     }

@@ -5,72 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8898ae74-0fc8-4883-a29c-35dd6c01e51f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/order/CheapComputerBuyingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/order/StandardComputerBuyingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/testng_dataprovider/TestUserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_data/ComputerDataObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_flow/order/OrderComputerFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/data/DataObjectBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-data/order/CheapComputerDataList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-data/order/StandardComputerDataList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/driver/DriverFactoryEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/17e192de-8d8e-467b-8517-528e318ff24b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/24d9022e-5785-42d4-8ac7-21f520870863-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/311f12c8-073d-4b19-9db4-2d5537b48bf9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/341bef8c-d0f5-44cd-9c1d-e71087a0a5a2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3a3924f1-b4f1-41c2-9e65-4afd8286a716-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/521188f2-6464-4fab-96bd-ab3bf1b57ec8-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/56f42289-502f-4046-af9b-4e118ecdbee1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5dac759a-f096-44fc-974a-3898c420e464-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/693dde5d-c9cd-4a3a-83df-226e85c5000d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6d253d76-85fa-4db3-9b44-7612f3dcc433-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7a4076fc-f848-4687-96dd-7c95ac717a56-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7ad1b98d-0e4f-4885-9b8e-7e5d9ef6ddac-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/820bf61e-128c-407f-bf75-b1adc0fb9f58-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8a3f1cbd-1bba-45c7-a1cd-f5040fdfcd3a-attachment" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a258566a-2165-44ba-baa0-afc2e10f0382-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f9646ba5-abd6-40c0-8dc7-9422742d4085-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshottestCheapCompBuying_2022-3-5-2-3-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/order/BuyingComputerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_data/TestGson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/TestGson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data/User.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data/User.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/BaseItemDetailComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/BaseItemDetailComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/CheapComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/CheapComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/ComputerEssentialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/ComputerEssentialComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/components/order/StandardComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/components/order/StandardComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/global/FooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/global/FooterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/order/CheapComputerBuyingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/order/CheapComputerBuyingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/order/StandardComputerBuyingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/order/StandardComputerBuyingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_flow/order/OrderComputerFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_flow/order/OrderComputerFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/test-suites/Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-suites/Regression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/driver/DriverFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/drivers/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/ComponentCssSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/AccountColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/CustomerServiceColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FolllowUsColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterColumnComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/FooterComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/footer/InformationColunmComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/HeaderComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/global/header/LogoComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/BaseItemDetailComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/CheapComputerComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/ComputerEssentialComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/components/order/StandardComputerComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/AnnotationParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/CategoryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/ComputerDetailsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/models/pages/RegisterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test-data/User.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test-suites/Regression.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/FooterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/HeaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/global/TestNGAssertionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/order/BuyingComputerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/pages/HomePageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_data/TestGson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_data/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/FooterTestFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test_flow/global/HeaderTestFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/url/Urls.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +75,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selenium012022\src\test\resources\test-data\order" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="driver" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.StandardComputerBuyingTest">

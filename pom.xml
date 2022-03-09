@@ -31,6 +31,10 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <systemPropertyVariables>
+                        <allure.link.issue.pattern>https://example.org/issues/{}</allure.link.issue.pattern>
+                        <allure.link.tms.pattern>https://example.org/ts/{}</allure.link.tms.pattern>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 

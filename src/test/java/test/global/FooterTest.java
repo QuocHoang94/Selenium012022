@@ -19,6 +19,7 @@ public class FooterTest extends BaseTest implements Urls {
 
     @Test
     public void testHomepageFooter() {
+        WebDriver driver = getDriver();
         driver.get(BASE_URL.concat(HOME_PAGE));
         FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
         footerTestFlow.verifyFooterComponent(HomePage.class);
@@ -26,6 +27,7 @@ public class FooterTest extends BaseTest implements Urls {
 
     @Test
     public void testRegisterPageFooter() {
+        WebDriver driver = getDriver();
         driver.get(BASE_URL.concat(REGISTER_PAGE));
         FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
         footerTestFlow.verifyFooterComponent(RegisterPage.class);
@@ -34,6 +36,7 @@ public class FooterTest extends BaseTest implements Urls {
 
     @Test
     public void testCategoryPageFooter() {
+        WebDriver driver = getDriver();
         List<String> categorySlugs = Arrays.asList("/books", "/computers", "/electronics");
         String randomSlug = categorySlugs.get(new SecureRandom().nextInt(categorySlugs.size()));
         driver.get(BASE_URL.concat(randomSlug));

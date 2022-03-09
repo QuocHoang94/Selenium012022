@@ -1,0 +1,211 @@
+{
+  "uid" : "d9a4559b44329436",
+  "name" : "Buying Cheap Computer",
+  "fullName" : "test.order.StandardComputerBuyingTest.testStandardCompBuying",
+  "historyId" : "a273b5450a500852a8855f458cc11d86",
+  "time" : {
+    "start" : 1646811712014,
+    "stop" : 1646811713293,
+    "duration" : 1279
+  },
+  "description" : "Buying standard computer with data set",
+  "descriptionHtml" : "<p>Buying standard computer with data set</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1646811703382,
+      "stop" : 1646811703391,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Buying standard computer with data set",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Select processor type as 2.5GHz",
+      "time" : {
+        "start" : 1646811712970,
+        "stop" : 1646811713057,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "prefixValue",
+        "value" : "2.5GHz"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Select RAM type as 4GB",
+      "time" : {
+        "start" : 1646811713057,
+        "stop" : 1646811713164,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "prefixValue",
+        "value" : "4GB"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Select product quantity as 55",
+      "time" : {
+        "start" : 1646811713165,
+        "stop" : 1646811713242,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "quantity",
+        "value" : "55"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on [Add To Cart] button",
+      "time" : {
+        "start" : 1646811713242,
+        "stop" : 1646811713292,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646811713294,
+      "stop" : 1646811713294,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1646811714679,
+      "stop" : 1646811715310,
+      "duration" : 631
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testStandardCompBuying"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Buying Standard Computer"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BG9IMGR"
+  }, {
+    "name" : "thread",
+    "value" : "14076@DESKTOP-BG9IMGR.TestNG-tests-2(21)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "test_data.ComputerDataObject@5412e47d"
+  } ],
+  "links" : [ {
+    "name" : "TC_002",
+    "url" : "https://example.org/ts/TC_002",
+    "type" : "tms"
+  }, {
+    "name" : "TC_003",
+    "url" : "https://example.org/ts/TC_003",
+    "type" : "tms"
+  }, {
+    "name" : "TC_004",
+    "url" : "https://example.org/ts/TC_004",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d9a4559b44329436.json",
+  "parameterValues" : [ "test_data.ComputerDataObject@5412e47d" ]
+}

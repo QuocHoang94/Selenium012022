@@ -1,0 +1,114 @@
+{
+  "uid" : "9bec1b4bb39181d6",
+  "name" : "testHomepageFooter",
+  "fullName" : "test.global.FooterTest.testHomepageFooter",
+  "historyId" : "74b76e5134c5dc817873977194102161",
+  "time" : {
+    "start" : 1646811715676,
+    "stop" : 1646811718478,
+    "duration" : 2802
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1646811703382,
+      "stop" : 1646811703391,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646811718479,
+      "stop" : 1646811718479,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1646811719781,
+      "stop" : 1646811720402,
+      "duration" : 621
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testHomepageFooter"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Buying Cheap Computer"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BG9IMGR"
+  }, {
+    "name" : "thread",
+    "value" : "14076@DESKTOP-BG9IMGR.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9bec1b4bb39181d6.json",
+  "parameterValues" : [ ]
+}

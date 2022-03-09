@@ -1,0 +1,199 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Regression",
+    "children" : [ {
+      "name" : "Buying Standard Computer",
+      "children" : [ {
+        "name" : "test.order.StandardComputerBuyingTest",
+        "children" : [ {
+          "name" : "Buying Cheap Computer",
+          "uid" : "4f988952252735ab",
+          "parentUid" : "b7dbf26f9c7b76a059dcf2126a4c183d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811703656,
+            "stop" : 1646811712002,
+            "duration" : 8346
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@4521176b" ]
+        }, {
+          "name" : "Buying Cheap Computer",
+          "uid" : "d9a4559b44329436",
+          "parentUid" : "b7dbf26f9c7b76a059dcf2126a4c183d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811712014,
+            "stop" : 1646811713293,
+            "duration" : 1279
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@5412e47d" ]
+        }, {
+          "name" : "Buying Cheap Computer",
+          "uid" : "593e53cf8aa7a674",
+          "parentUid" : "b7dbf26f9c7b76a059dcf2126a4c183d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811713298,
+            "stop" : 1646811714675,
+            "duration" : 1377
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@6f313889" ]
+        } ],
+        "uid" : "b7dbf26f9c7b76a059dcf2126a4c183d"
+      } ],
+      "uid" : "c064db60401e63f3e05073eb97550584"
+    }, {
+      "name" : "Buying Cheap Computer",
+      "children" : [ {
+        "name" : "test.order.CheapComputerBuyingTest",
+        "children" : [ {
+          "name" : "Buying Cheap Computer",
+          "uid" : "a53a64c2e7ed9cf8",
+          "parentUid" : "421d6af0cc2ea0b3b6b2d1dc5c53b152",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811703656,
+            "stop" : 1646811711795,
+            "duration" : 8139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@e8bc693" ]
+        }, {
+          "name" : "Buying Cheap Computer",
+          "uid" : "973c5ada38cee503",
+          "parentUid" : "421d6af0cc2ea0b3b6b2d1dc5c53b152",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811711991,
+            "stop" : 1646811713129,
+            "duration" : 1138
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@3f251df6" ]
+        }, {
+          "name" : "Buying Cheap Computer",
+          "uid" : "4c4c44fc89f57627",
+          "parentUid" : "421d6af0cc2ea0b3b6b2d1dc5c53b152",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811713136,
+            "stop" : 1646811714494,
+            "duration" : 1358
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "test_data.ComputerDataObject@590a9826" ]
+        }, {
+          "name" : "testSomething",
+          "uid" : "131c7ae2a97f422c",
+          "parentUid" : "421d6af0cc2ea0b3b6b2d1dc5c53b152",
+          "status" : "failed",
+          "time" : {
+            "start" : 1646811714507,
+            "stop" : 1646811714513,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "421d6af0cc2ea0b3b6b2d1dc5c53b152"
+      }, {
+        "name" : "test.global.FooterTest",
+        "children" : [ {
+          "name" : "testCategoryPageFooter",
+          "uid" : "c18d946f2cf762ca",
+          "parentUid" : "37048c6cccd8a0917733245f388c1c49",
+          "status" : "failed",
+          "time" : {
+            "start" : 1646811714794,
+            "stop" : 1646811715498,
+            "duration" : 704
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testHomepageFooter",
+          "uid" : "9bec1b4bb39181d6",
+          "parentUid" : "37048c6cccd8a0917733245f388c1c49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811715676,
+            "stop" : 1646811718478,
+            "duration" : 2802
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRegisterPageFooter",
+          "uid" : "30272e7c4b620547",
+          "parentUid" : "37048c6cccd8a0917733245f388c1c49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646811718483,
+            "stop" : 1646811719774,
+            "duration" : 1291
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "37048c6cccd8a0917733245f388c1c49"
+      } ],
+      "uid" : "6777ad1c7b6e3d762e7f1bfdeda163a8"
+    } ],
+    "uid" : "5ba398ba8a4e16d50ebb84d8f641e8da"
+  } ]
+}

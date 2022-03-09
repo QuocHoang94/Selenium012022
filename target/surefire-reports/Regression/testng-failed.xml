@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression]" parallel="tests">
+  <test thread-count="4" verbose="0" name="Buying Cheap Computer(failed)" parallel="tests">
+    <classes>
+      <class name="test.global.FooterTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="testCategoryPageFooter"/>
+        </methods>
+      </class> <!-- test.global.FooterTest -->
+      <class name="test.order.CheapComputerBuyingTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="testSomething"/>
+        </methods>
+      </class> <!-- test.order.CheapComputerBuyingTest -->
+    </classes>
+  </test> <!-- Buying Cheap Computer(failed) -->
+</suite> <!-- Failed suite [Regression] -->

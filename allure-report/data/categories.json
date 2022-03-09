@@ -1,0 +1,51 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Failed by....sth",
+      "children" : [ {
+        "name" : "testSomething",
+        "uid" : "131c7ae2a97f422c",
+        "parentUid" : "9095888850aed4882e66ba97942e6e20",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646811714507,
+          "stop" : 1646811714513,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9095888850aed4882e66ba97942e6e20"
+    }, {
+      "name" : "null",
+      "children" : [ {
+        "name" : "testCategoryPageFooter",
+        "uid" : "c18d946f2cf762ca",
+        "parentUid" : "666d1a31450af3ae8459f14f07f9a1b4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646811714794,
+          "stop" : 1646811715498,
+          "duration" : 704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "666d1a31450af3ae8459f14f07f9a1b4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

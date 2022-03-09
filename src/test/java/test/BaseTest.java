@@ -1,6 +1,7 @@
 package test;
 
 import driver.DriverFactory;
+import driver.DriverFactoryEx;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -16,25 +17,31 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.sql.Driver;
+import java.util.*;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    private final static List<DriverFactoryEx> webdriverThreadPool = Collections.synchronizedList(new ArrayList<>());
+    private static ThreadLocal<DriverFactoryEx> driverThread;
 
-    private void initDriver() {
-        driver = DriverFactory.getChromeDriver();
+    protected WebDriver getDriver() {
+        return driverThread.get().getChromeDriver();
     }
 
     @BeforeTest(alwaysRun = true)
     public void beforeTest() {
-        initDriver();
+//        initDriver();
+        driverThread = ThreadLocal.withInitial(() -> {
+            DriverFactoryEx webdriverThread = new DriverFactoryEx();
+            webdriverThreadPool.add(webdriverThread);
+            return webdriverThread;
+        });
     }
 
     @AfterTest(alwaysRun = true)
     public void afterTest() {
-        driver.quit();
+        driverThread.get().getChromeDriver().quit();
     }
 
     @AfterMethod(alwaysRun = true)
@@ -57,21 +64,22 @@ public class BaseTest {
             String fileLocation = System.getProperty("user.dir") + "/screenshot" + methodName + "_" + takenDate + ".png";
 
             //2. Take screen shoot
+            WebDriver driver = driverThread.get().getChromeDriver();
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 
-            try{
+            try {
                 //3. Save
-                FileUtils.copyFile(screenshot,new File(fileLocation));
+                FileUtils.copyFile(screenshot, new File(fileLocation));
                 //4. Attach into allure report
                 Path filePath = Paths.get(fileLocation);
-                try(InputStream is = Files.newInputStream(filePath)){
+                try (InputStream is = Files.newInputStream(filePath)) {
                     Allure.addAttachment(methodName, is);
-                }catch(Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

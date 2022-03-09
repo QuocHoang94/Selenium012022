@@ -1,0 +1,187 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-BG9IMGR",
+    "children" : [ {
+      "name" : "14076@DESKTOP-BG9IMGR.TestNG-tests-1(20)",
+      "children" : [ {
+        "name" : "Buying Cheap Computer",
+        "uid" : "973c5ada38cee503",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811711991,
+          "stop" : 1646811713129,
+          "duration" : 1138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@3f251df6" ]
+      }, {
+        "name" : "testHomepageFooter",
+        "uid" : "9bec1b4bb39181d6",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811715676,
+          "stop" : 1646811718478,
+          "duration" : 2802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testCategoryPageFooter",
+        "uid" : "c18d946f2cf762ca",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646811714794,
+          "stop" : 1646811715498,
+          "duration" : 704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testRegisterPageFooter",
+        "uid" : "30272e7c4b620547",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811718483,
+          "stop" : 1646811719774,
+          "duration" : 1291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Buying Cheap Computer",
+        "uid" : "a53a64c2e7ed9cf8",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811703656,
+          "stop" : 1646811711795,
+          "duration" : 8139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@e8bc693" ]
+      }, {
+        "name" : "Buying Cheap Computer",
+        "uid" : "4c4c44fc89f57627",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811713136,
+          "stop" : 1646811714494,
+          "duration" : 1358
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@590a9826" ]
+      }, {
+        "name" : "testSomething",
+        "uid" : "131c7ae2a97f422c",
+        "parentUid" : "83e74a75311ccb260e1c9d44e66dcb86",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646811714507,
+          "stop" : 1646811714513,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "83e74a75311ccb260e1c9d44e66dcb86"
+    }, {
+      "name" : "14076@DESKTOP-BG9IMGR.TestNG-tests-2(21)",
+      "children" : [ {
+        "name" : "Buying Cheap Computer",
+        "uid" : "d9a4559b44329436",
+        "parentUid" : "74ce21554c1fb163d4b6669ba643b5f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811712014,
+          "stop" : 1646811713293,
+          "duration" : 1279
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@5412e47d" ]
+      }, {
+        "name" : "Buying Cheap Computer",
+        "uid" : "4f988952252735ab",
+        "parentUid" : "74ce21554c1fb163d4b6669ba643b5f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811703656,
+          "stop" : 1646811712002,
+          "duration" : 8346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@4521176b" ]
+      }, {
+        "name" : "Buying Cheap Computer",
+        "uid" : "593e53cf8aa7a674",
+        "parentUid" : "74ce21554c1fb163d4b6669ba643b5f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646811713298,
+          "stop" : 1646811714675,
+          "duration" : 1377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "test_data.ComputerDataObject@6f313889" ]
+      } ],
+      "uid" : "74ce21554c1fb163d4b6669ba643b5f1"
+    } ],
+    "uid" : "461aa8d6c867d212cf13918ea67442f4"
+  } ]
+}

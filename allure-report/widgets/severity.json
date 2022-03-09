@@ -1,0 +1,101 @@
+[ {
+  "uid" : "4c4c44fc89f57627",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811713136,
+    "stop" : 1646811714494,
+    "duration" : 1358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "593e53cf8aa7a674",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811713298,
+    "stop" : 1646811714675,
+    "duration" : 1377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30272e7c4b620547",
+  "name" : "testRegisterPageFooter",
+  "time" : {
+    "start" : 1646811718483,
+    "stop" : 1646811719774,
+    "duration" : 1291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "131c7ae2a97f422c",
+  "name" : "testSomething",
+  "time" : {
+    "start" : 1646811714507,
+    "stop" : 1646811714513,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9a4559b44329436",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811712014,
+    "stop" : 1646811713293,
+    "duration" : 1279
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c18d946f2cf762ca",
+  "name" : "testCategoryPageFooter",
+  "time" : {
+    "start" : 1646811714794,
+    "stop" : 1646811715498,
+    "duration" : 704
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bec1b4bb39181d6",
+  "name" : "testHomepageFooter",
+  "time" : {
+    "start" : 1646811715676,
+    "stop" : 1646811718478,
+    "duration" : 2802
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a53a64c2e7ed9cf8",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811703656,
+    "stop" : 1646811711795,
+    "duration" : 8139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "973c5ada38cee503",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811711991,
+    "stop" : 1646811713129,
+    "duration" : 1138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f988952252735ab",
+  "name" : "Buying Cheap Computer",
+  "time" : {
+    "start" : 1646811703656,
+    "stop" : 1646811712002,
+    "duration" : 8346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

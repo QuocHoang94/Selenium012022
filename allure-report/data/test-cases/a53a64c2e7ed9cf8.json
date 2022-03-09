@@ -1,0 +1,189 @@
+{
+  "uid" : "a53a64c2e7ed9cf8",
+  "name" : "Buying Cheap Computer",
+  "fullName" : "test.order.CheapComputerBuyingTest.testCheapCompBuying",
+  "historyId" : "66a0aac1b19dae1f351a2280134d68b9",
+  "time" : {
+    "start" : 1646811703656,
+    "stop" : 1646811711795,
+    "duration" : 8139
+  },
+  "description" : "Buying cheap computer with data set",
+  "descriptionHtml" : "<p>Buying cheap computer with data set</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1646811703382,
+      "stop" : 1646811703391,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Buying cheap computer with data set",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Select processor type as Fast",
+      "time" : {
+        "start" : 1646811711496,
+        "stop" : 1646811711557,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "Fast"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Select product quantity as 55",
+      "time" : {
+        "start" : 1646811711609,
+        "stop" : 1646811711715,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "quantity",
+        "value" : "55"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click on [Add To Cart] button",
+      "time" : {
+        "start" : 1646811711716,
+        "stop" : 1646811711789,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646811711960,
+      "stop" : 1646811711960,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1646811719781,
+      "stop" : 1646811720402,
+      "duration" : 621
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.order.CheapComputerBuyingTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.order.CheapComputerBuyingTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCheapCompBuying"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Buying Cheap Computer"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.order.CheapComputerBuyingTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BG9IMGR"
+  }, {
+    "name" : "thread",
+    "value" : "14076@DESKTOP-BG9IMGR.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "test_data.ComputerDataObject@e8bc693"
+  } ],
+  "links" : [ {
+    "name" : "TC_001",
+    "url" : "https://example.org/ts/TC_001",
+    "type" : "tms"
+  }, {
+    "name" : "TC_005",
+    "url" : "https://example.org/ts/TC_005",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a53a64c2e7ed9cf8.json",
+  "parameterValues" : [ "test_data.ComputerDataObject@e8bc693" ]
+}

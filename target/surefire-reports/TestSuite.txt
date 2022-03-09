@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.45 s <<< FAILURE! - in TestSuite
+test.order.CheapComputerBuyingTest.testSomething  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: Failed by....sth
+	at test.order.CheapComputerBuyingTest.testSomething(CheapComputerBuyingTest.java:33)
+
+test.global.FooterTest.testCategoryPageFooter  Time elapsed: 0.709 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at test.global.FooterTest.testCategoryPageFooter(FooterTest.java:43)
+
