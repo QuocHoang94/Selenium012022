@@ -1,0 +1,278 @@
+{
+  "uid" : "f08e41ef6da2922a",
+  "name" : "Buying Cheap Computer",
+  "fullName" : "test.order.StandardComputerBuyingTest.testStandardCompBuying",
+  "historyId" : "40d1da39ba77bb88849b2c60ef6b266a",
+  "time" : {
+    "start" : 1646823386524,
+    "stop" : 1646823393150,
+    "duration" : 6626
+  },
+  "description" : "Buying standard computer with data set",
+  "descriptionHtml" : "<p>Buying standard computer with data set</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Input must be set",
+  "statusTrace" : "java.lang.IllegalArgumentException: Input must be set\r\n\tat org.openqa.selenium.internal.Require.nonNull(Require.java:56)\r\n\tat org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:128)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:61)\r\n\tat models.components.order.BaseItemDetailComponent.waitUntilItemAddedToCart(BaseItemDetailComponent.java:45)\r\n\tat test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:38)\r\n\tat test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\r\n\tat org.testng.TestRunner.run(TestRunner.java:603)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1646823386249,
+      "stop" : 1646823386256,
+      "duration" : 7
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Buying standard computer with data set",
+    "status" : "broken",
+    "statusMessage" : "Input must be set",
+    "statusTrace" : "java.lang.IllegalArgumentException: Input must be set\r\n\tat org.openqa.selenium.internal.Require.nonNull(Require.java:56)\r\n\tat org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:128)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:61)\r\n\tat models.components.order.BaseItemDetailComponent.waitUntilItemAddedToCart(BaseItemDetailComponent.java:45)\r\n\tat test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:38)\r\n\tat test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\r\n\tat org.testng.TestRunner.run(TestRunner.java:603)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+    "steps" : [ {
+      "name" : "Select processor type as 2.2GHz",
+      "time" : {
+        "start" : 1646823392524,
+        "stop" : 1646823392651,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "prefixValue",
+        "value" : "2.2GHz"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Select RAM type as 8GB",
+      "time" : {
+        "start" : 1646823392652,
+        "stop" : 1646823392823,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "prefixValue",
+        "value" : "8GB"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Select product quantity as 55",
+      "time" : {
+        "start" : 1646823392824,
+        "stop" : 1646823392938,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "quantity",
+        "value" : "55"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Select HDD type as {asType}",
+      "time" : {
+        "start" : 1646823392939,
+        "stop" : 1646823393005,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "hddType",
+        "value" : "400 GB"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Select OS type as {asType}",
+      "time" : {
+        "start" : 1646823393005,
+        "stop" : 1646823393054,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "osType",
+        "value" : "Ubuntu"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on [Add To Cart] button",
+      "time" : {
+        "start" : 1646823393054,
+        "stop" : 1646823393148,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "wait Until Item Added To Cart",
+      "time" : {
+        "start" : 1646823393148,
+        "stop" : 1646823393149,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "Input must be set",
+      "statusTrace" : "java.lang.IllegalArgumentException: Input must be set\r\n\tat org.openqa.selenium.internal.Require.nonNull(Require.java:56)\r\n\tat org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:97)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:128)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:61)\r\n\tat models.components.order.BaseItemDetailComponent.waitUntilItemAddedToCart(BaseItemDetailComponent.java:45)\r\n\tat test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:38)\r\n\tat test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\r\n\tat org.testng.TestRunner.run(TestRunner.java:603)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646823393156,
+      "stop" : 1646823393420,
+      "duration" : 264
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "44b277dbde138ae8",
+      "name" : "testStandardCompBuying",
+      "source" : "44b277dbde138ae8.png",
+      "type" : "image/png",
+      "size" : 192456
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1646823396405,
+      "stop" : 1646823397027,
+      "duration" : 622
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testStandardCompBuying"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Buying Standard Computer"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.order.StandardComputerBuyingTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BG9IMGR"
+  }, {
+    "name" : "thread",
+    "value" : "17448@DESKTOP-BG9IMGR.TestNG-tests-2(21)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "test_data.ComputerDataObject@568abc20"
+  } ],
+  "links" : [ {
+    "name" : "TC_002",
+    "url" : "https://example.org/ts/TC_002",
+    "type" : "tms"
+  }, {
+    "name" : "TC_003",
+    "url" : "https://example.org/ts/TC_003",
+    "type" : "tms"
+  }, {
+    "name" : "TC_004",
+    "url" : "https://example.org/ts/TC_004",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f08e41ef6da2922a.json",
+  "parameterValues" : [ "test_data.ComputerDataObject@568abc20" ]
+}

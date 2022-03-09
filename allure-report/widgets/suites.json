@@ -5,9 +5,9 @@
     "name" : "Regression",
     "statistic" : {
       "failed" : 2,
-      "broken" : 0,
+      "broken" : 6,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 10
     }

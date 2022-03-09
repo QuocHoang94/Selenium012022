@@ -1,12 +1,90 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 18.45 s <<< FAILURE! - in TestSuite
-test.order.CheapComputerBuyingTest.testSomething  Time elapsed: 0.024 s  <<< FAILURE!
+Tests run: 10, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 51.754 s <<< FAILURE! - in TestSuite
+test.order.CheapComputerBuyingTest.testCheapCompBuying[test_data.ComputerDataObject@41bc847a](1)  Time elapsed: 17.192 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=d814f095-8262-4693-9b1e-0c374bf9d107, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+	at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+
+test.order.StandardComputerBuyingTest.testStandardCompBuying[test_data.ComputerDataObject@34a12f67](1)  Time elapsed: 0.294 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=98ad2d7f-405f-4832-9447-14227070cbcf, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+	at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+
+test.order.StandardComputerBuyingTest.testStandardCompBuying[test_data.ComputerDataObject@7027d3c6](2)  Time elapsed: 11.866 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=dadd044b-cbd3-4003-b5fc-09e34f082198, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+	at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+
+test.order.CheapComputerBuyingTest.testCheapCompBuying[test_data.ComputerDataObject@4d0014d](2)  Time elapsed: 12.029 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=b935d7d4-f862-4f73-a62c-89e3aa7241db, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+	at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+
+test.order.CheapComputerBuyingTest.testCheapCompBuying[test_data.ComputerDataObject@5e47918](3)  Time elapsed: 11.663 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=851028b0-14a2-4fe4-a0fc-5fc74754b999, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+	at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+
+test.order.CheapComputerBuyingTest.testSomething  Time elapsed: 0.015 s  <<< FAILURE!
 java.lang.AssertionError: Failed by....sth
 	at test.order.CheapComputerBuyingTest.testSomething(CheapComputerBuyingTest.java:33)
 
-test.global.FooterTest.testCategoryPageFooter  Time elapsed: 0.709 s  <<< FAILURE!
+test.order.StandardComputerBuyingTest.testStandardCompBuying[test_data.ComputerDataObject@7a430b94](3)  Time elapsed: 0.08 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=d9f37aec-da80-4f22-a620-61697cdbe9e7, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+	at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+
+test.global.FooterTest.testCategoryPageFooter  Time elapsed: 1.761 s  <<< FAILURE!
 java.lang.AssertionError: null
 	at test.global.FooterTest.testCategoryPageFooter(FooterTest.java:43)
 

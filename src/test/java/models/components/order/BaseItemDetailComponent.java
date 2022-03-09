@@ -5,9 +5,15 @@ import models.Component;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class BaseItemDetailComponent extends Component {
 
+    private final By barNotificationContentSel = By.cssSelector("#bar-notification p");
     private final By productPriceSel = By.cssSelector(".product-price");
     private final By productQuantitySel = By.cssSelector(".qty-input");
     private final By addToCartBtnSel = By.cssSelector(".add-to-cart-button");
@@ -32,5 +38,12 @@ public class BaseItemDetailComponent extends Component {
     @Step("Click on [Add To Cart] button")
     public void clickOnAddToCartBtn() {
         component.findElement(addToCartBtnSel).click();
+    }
+
+    @Step("wait Until Item Added To Cart")
+    public void waitUntilItemAddedToCart() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        String successAddToCartStr = "The product has been added to your shopping cart";
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(barNotificationContentSel, successAddToCartStr));
     }
 }

@@ -1,91 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="2" total="12" passed="8">
+<testng-results skipped="0" failed="8" ignored="2" total="12" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="17047" started-at="2022-03-09T14:41:43 ICT" finished-at="2022-03-09T14:42:00 ICT">
+  <suite name="Regression" duration-ms="50372" started-at="2022-03-09T23:52:11 ICT" finished-at="2022-03-09T23:53:01 ICT">
     <groups>
     </groups>
-    <test name="Buying Standard Computer" duration-ms="11956" started-at="2022-03-09T14:41:43 ICT" finished-at="2022-03-09T14:41:55 ICT">
+    <test name="Buying Standard Computer" duration-ms="42942" started-at="2022-03-09T23:52:11 ICT" finished-at="2022-03-09T23:52:54 ICT">
       <class name="test.order.StandardComputerBuyingTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="beforeTest" is-config="true" duration-ms="25" started-at="2022-03-09T14:41:43 ICT" finished-at="2022-03-09T14:41:43 ICT">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="beforeTest" is-config="true" duration-ms="26" started-at="2022-03-09T23:52:11 ICT" finished-at="2022-03-09T23:52:11 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="testStandardCompBuying" duration-ms="8464" started-at="2022-03-09T14:41:43 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T14:41:52 ICT">
+        <test-method status="FAIL" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="testStandardCompBuying" duration-ms="17603" started-at="2022-03-09T23:52:11 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T23:52:29 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@4521176b]]>
+                <![CDATA[test_data.ComputerDataObject@34a12f67]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=98ad2d7f-405f-4832-9447-14227070cbcf, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=98ad2d7f-405f-4832-9447-14227070cbcf, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-09T14:41:52 ICT" finished-at="2022-03-09T14:41:52 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="afterMethod" is-config="true" duration-ms="195" started-at="2022-03-09T23:52:29 ICT" finished-at="2022-03-09T23:52:29 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardCompBuying status=SUCCESS method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardCompBuying status=FAILURE method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="testStandardCompBuying" duration-ms="1285" started-at="2022-03-09T14:41:52 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T14:41:53 ICT">
+        <test-method status="FAIL" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="testStandardCompBuying" duration-ms="11850" started-at="2022-03-09T23:52:29 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T23:52:41 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@5412e47d]]>
+                <![CDATA[test_data.ComputerDataObject@7027d3c6]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=dadd044b-cbd3-4003-b5fc-09e34f082198, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=dadd044b-cbd3-4003-b5fc-09e34f082198, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-09T14:41:53 ICT" finished-at="2022-03-09T14:41:53 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="afterMethod" is-config="true" duration-ms="224" started-at="2022-03-09T23:52:41 ICT" finished-at="2022-03-09T23:52:41 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardCompBuying status=SUCCESS method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardCompBuying status=FAILURE method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="testStandardCompBuying" duration-ms="1380" started-at="2022-03-09T14:41:53 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="FAIL" signature="testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="testStandardCompBuying" duration-ms="12073" started-at="2022-03-09T23:52:41 ICT" description="Buying Cheap Computer" data-provider="standardCompsDataSet" finished-at="2022-03-09T23:52:53 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@6f313889]]>
+                <![CDATA[test_data.ComputerDataObject@7a430b94]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=d9f37aec-da80-4f22-a620-61697cdbe9e7, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1c0fc31999c919d0f7eb7b5ec50a0c9, findChildElement {id=d9f37aec-da80-4f22-a620-61697cdbe9e7, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1c0fc31999c919d0f7eb7b5ec50a0c9
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.StandardComputerBuyingTest.testStandardCompBuying(StandardComputerBuyingTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="afterMethod" is-config="true" duration-ms="146" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:53 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardCompBuying status=SUCCESS method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardCompBuying status=FAILURE method=StandardComputerBuyingTest.testStandardCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.order.StandardComputerBuyingTest@4d63b624]" name="afterTest" is-config="true" duration-ms="631" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:55 ICT">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.order.StandardComputerBuyingTest@617fe9e1]" name="afterTest" is-config="true" duration-ms="637" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:54 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.order.StandardComputerBuyingTest -->
     </test> <!-- Buying Standard Computer -->
-    <test name="Buying Cheap Computer" duration-ms="17047" started-at="2022-03-09T14:41:43 ICT" finished-at="2022-03-09T14:42:00 ICT">
+    <test name="Buying Cheap Computer" duration-ms="50372" started-at="2022-03-09T23:52:11 ICT" finished-at="2022-03-09T23:53:01 ICT">
       <class name="test.global.FooterTest">
-        <test-method status="FAIL" signature="testCategoryPageFooter()[pri:0, instance:test.global.FooterTest@6691490c]" name="testCategoryPageFooter" duration-ms="705" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:55 ICT">
+        <test-method status="FAIL" signature="testCategoryPageFooter()[pri:0, instance:test.global.FooterTest@6de54b40]" name="testCategoryPageFooter" duration-ms="1760" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:55 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -124,41 +322,41 @@ at java.lang.Thread.run(Thread.java:750)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCategoryPageFooter -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6691490c]" name="afterMethod" is-config="true" duration-ms="173" started-at="2022-03-09T14:41:55 ICT" finished-at="2022-03-09T14:41:55 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6de54b40]" name="afterMethod" is-config="true" duration-ms="134" started-at="2022-03-09T23:52:55 ICT" finished-at="2022-03-09T23:52:55 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCategoryPageFooter status=FAILURE method=FooterTest.testCategoryPageFooter()[pri:0, instance:test.global.FooterTest@6691490c] output={null}]]]>
+                <![CDATA[[TestResult name=testCategoryPageFooter status=FAILURE method=FooterTest.testCategoryPageFooter()[pri:0, instance:test.global.FooterTest@6de54b40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testHomepageFooter()[pri:0, instance:test.global.FooterTest@6691490c]" name="testHomepageFooter" duration-ms="2802" started-at="2022-03-09T14:41:55 ICT" finished-at="2022-03-09T14:41:58 ICT">
+        <test-method status="PASS" signature="testHomepageFooter()[pri:0, instance:test.global.FooterTest@6de54b40]" name="testHomepageFooter" duration-ms="4416" started-at="2022-03-09T23:52:55 ICT" finished-at="2022-03-09T23:52:59 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomepageFooter -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6691490c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-09T14:41:58 ICT" finished-at="2022-03-09T14:41:58 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6de54b40]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-03-09T23:52:59 ICT" finished-at="2022-03-09T23:52:59 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testHomepageFooter status=SUCCESS method=FooterTest.testHomepageFooter()[pri:0, instance:test.global.FooterTest@6691490c] output={null}]]]>
+                <![CDATA[[TestResult name=testHomepageFooter status=SUCCESS method=FooterTest.testHomepageFooter()[pri:0, instance:test.global.FooterTest@6de54b40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testRegisterPageFooter()[pri:0, instance:test.global.FooterTest@6691490c]" name="testRegisterPageFooter" duration-ms="1291" started-at="2022-03-09T14:41:58 ICT" finished-at="2022-03-09T14:41:59 ICT">
+        <test-method status="PASS" signature="testRegisterPageFooter()[pri:0, instance:test.global.FooterTest@6de54b40]" name="testRegisterPageFooter" duration-ms="1140" started-at="2022-03-09T23:52:59 ICT" finished-at="2022-03-09T23:53:01 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterPageFooter -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6691490c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-09T14:41:59 ICT" finished-at="2022-03-09T14:41:59 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.global.FooterTest@6de54b40]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-09T23:53:01 ICT" finished-at="2022-03-09T23:53:01 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRegisterPageFooter status=SUCCESS method=FooterTest.testRegisterPageFooter()[pri:0, instance:test.global.FooterTest@6691490c] output={null}]]]>
+                <![CDATA[[TestResult name=testRegisterPageFooter status=SUCCESS method=FooterTest.testRegisterPageFooter()[pri:0, instance:test.global.FooterTest@6de54b40] output={null}]]]>
               </value>
             </param>
           </params>
@@ -167,77 +365,275 @@ at java.lang.Thread.run(Thread.java:750)
         </test-method> <!-- afterMethod -->
       </class> <!-- test.global.FooterTest -->
       <class name="test.order.CheapComputerBuyingTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="beforeTest" is-config="true" duration-ms="25" started-at="2022-03-09T14:41:43 ICT" finished-at="2022-03-09T14:41:43 ICT">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="beforeTest" is-config="true" duration-ms="26" started-at="2022-03-09T23:52:11 ICT" finished-at="2022-03-09T23:52:11 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="testCheapCompBuying" duration-ms="8251" started-at="2022-03-09T14:41:43 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T14:41:51 ICT">
+        <test-method status="FAIL" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="testCheapCompBuying" duration-ms="17012" started-at="2022-03-09T23:52:11 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T23:52:28 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@e8bc693]]>
+                <![CDATA[test_data.ComputerDataObject@41bc847a]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=d814f095-8262-4693-9b1e-0c374bf9d107, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=d814f095-8262-4693-9b1e-0c374bf9d107, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-03-09T14:41:51 ICT" finished-at="2022-03-09T14:41:51 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="afterMethod" is-config="true" duration-ms="185" started-at="2022-03-09T23:52:28 ICT" finished-at="2022-03-09T23:52:28 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheapCompBuying status=SUCCESS method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0] output={null}]]]>
+                <![CDATA[[TestResult name=testCheapCompBuying status=FAILURE method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="testCheapCompBuying" duration-ms="1147" started-at="2022-03-09T14:41:51 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T14:41:53 ICT">
+        <test-method status="FAIL" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="testCheapCompBuying" duration-ms="12512" started-at="2022-03-09T23:52:28 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T23:52:41 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@3f251df6]]>
+                <![CDATA[test_data.ComputerDataObject@4d0014d]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=b935d7d4-f862-4f73-a62c-89e3aa7241db, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=b935d7d4-f862-4f73-a62c-89e3aa7241db, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-03-09T14:41:53 ICT" finished-at="2022-03-09T14:41:53 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="afterMethod" is-config="true" duration-ms="131" started-at="2022-03-09T23:52:41 ICT" finished-at="2022-03-09T23:52:41 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheapCompBuying status=SUCCESS method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0] output={null}]]]>
+                <![CDATA[[TestResult name=testCheapCompBuying status=FAILURE method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="testCheapCompBuying" duration-ms="1362" started-at="2022-03-09T14:41:53 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="FAIL" signature="testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="testCheapCompBuying" duration-ms="11654" started-at="2022-03-09T23:52:41 ICT" description="Buying Cheap Computer" data-provider="cheapCompsDataSet" finished-at="2022-03-09T23:52:53 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test_data.ComputerDataObject@590a9826]]>
+                <![CDATA[test_data.ComputerDataObject@5e47918]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=851028b0-14a2-4fe4-a0fc-5fc74754b999, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bar-notification a"}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-BG9IMGR', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7e0471167b62f8b3dbd3a672c8362ca, findChildElement {id=851028b0-14a2-4fe4-a0fc-5fc74754b999, using=css selector, value=#bar-notification a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55313/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7e0471167b62f8b3dbd3a672c8362ca
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
+at models.components.global.header.HeaderComponent.clickOnShoppingCartLink(HeaderComponent.java:28)
+at test_flow.order.OrderComputerFlow.buildCompSpecAndAddToCart(OrderComputerFlow.java:41)
+at test.order.CheapComputerBuyingTest.testCheapCompBuying(CheapComputerBuyingTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapCompBuying -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="afterMethod" is-config="true" duration-ms="256" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:53 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheapCompBuying status=SUCCESS method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0] output={null}]]]>
+                <![CDATA[[TestResult name=testCheapCompBuying status=FAILURE method=CheapComputerBuyingTest.testCheapCompBuying(test_data.ComputerDataObject)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="testSomething()[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="testSomething" duration-ms="7" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="FAIL" signature="testSomething()[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="testSomething" duration-ms="13" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:53 ICT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failed by....sth]]>
@@ -275,18 +671,18 @@ at java.lang.Thread.run(Thread.java:750)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSomething -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="afterMethod" is-config="true" duration-ms="264" started-at="2022-03-09T14:41:54 ICT" finished-at="2022-03-09T14:41:54 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="afterMethod" is-config="true" duration-ms="138" started-at="2022-03-09T23:52:53 ICT" finished-at="2022-03-09T23:52:53 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSomething status=FAILURE method=CheapComputerBuyingTest.testSomething()[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0] output={null}]]]>
+                <![CDATA[[TestResult name=testSomething status=FAILURE method=CheapComputerBuyingTest.testSomething()[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.order.CheapComputerBuyingTest@61d9efe0]" name="afterTest" is-config="true" duration-ms="622" started-at="2022-03-09T14:41:59 ICT" finished-at="2022-03-09T14:42:00 ICT">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.order.CheapComputerBuyingTest@44a2b17b]" name="afterTest" is-config="true" duration-ms="680" started-at="2022-03-09T23:53:01 ICT" finished-at="2022-03-09T23:53:01 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

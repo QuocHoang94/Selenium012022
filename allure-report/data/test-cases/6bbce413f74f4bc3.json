@@ -1,0 +1,126 @@
+{
+  "uid" : "6bbce413f74f4bc3",
+  "name" : "testCategoryPageFooter",
+  "fullName" : "test.global.FooterTest.testCategoryPageFooter",
+  "historyId" : "24f4610df914e9f198ced6cd19078118",
+  "time" : {
+    "start" : 1646823396246,
+    "stop" : 1646823396941,
+    "duration" : 695
+  },
+  "status" : "failed",
+  "statusMessage" : "null",
+  "statusTrace" : "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:110)\r\n\tat org.testng.Assert.fail(Assert.java:115)\r\n\tat test.global.FooterTest.testCategoryPageFooter(FooterTest.java:43)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\r\n\tat org.testng.TestRunner.run(TestRunner.java:603)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1646823386249,
+      "stop" : 1646823386256,
+      "duration" : 7
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646823396947,
+      "stop" : 1646823397117,
+      "duration" : 170
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "272b0282e480774d",
+      "name" : "testCategoryPageFooter",
+      "source" : "272b0282e480774d.png",
+      "type" : "image/png",
+      "size" : 95058
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1646823400909,
+      "stop" : 1646823401533,
+      "duration" : 624
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCategoryPageFooter"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Buying Cheap Computer"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.global.FooterTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BG9IMGR"
+  }, {
+    "name" : "thread",
+    "value" : "17448@DESKTOP-BG9IMGR.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6bbce413f74f4bc3.json",
+  "parameterValues" : [ ]
+}

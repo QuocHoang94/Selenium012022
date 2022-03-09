@@ -4,8 +4,6 @@ import io.qameta.allure.Description;
 import io.qameta.allure.TmsLink;
 import models.components.order.StandardComputerComponent;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.BaseTest;
@@ -13,8 +11,6 @@ import test_data.ComputerDataObject;
 import test_flow.order.OrderComputerFlow;
 import url.Urls;
 import utils.data.DataObjectBuilder;
-
-import java.time.Duration;
 
 public class StandardComputerBuyingTest extends BaseTest implements Urls {
     @Description("Buying standard computer with data set")

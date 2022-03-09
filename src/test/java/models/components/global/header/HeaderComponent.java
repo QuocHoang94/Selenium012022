@@ -1,5 +1,6 @@
 package models.components.global.header;
 
+import io.qameta.allure.Step;
 import models.Component;
 import models.ComponentCssSelector;
 import org.openqa.selenium.By;
@@ -8,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 @ComponentCssSelector(value = ".header")
 public class HeaderComponent extends Component {
-
+    private static final By shoppingCartLinkSel = By.cssSelector("#bar-notification a");
     private static final By searchInputSel = By.cssSelector("form input");
     private static final By searchInputBtnSel = By.cssSelector(".search-box-button");
     private static final By allLinksSel = By.tagName("a");
@@ -20,6 +21,11 @@ public class HeaderComponent extends Component {
 
     public LogoComponent logoComp(){
         return findComponent(LogoComponent.class, driver);
+    }
+
+    @Step("Click on shopping cart link")
+    public void clickOnShoppingCartLink(){
+        component.findElement(shoppingCartLinkSel).click();
     }
 
     public WebElement searchInputElem(){
