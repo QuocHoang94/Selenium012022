@@ -5,13 +5,14 @@ public class ComputerDataObject {
     private String ram;
     private String os;
     private String hdd;
+    private String software;
 
-
-    public ComputerDataObject(String processorType, String ram,String os) {
+    public ComputerDataObject(String processorType, String ram, String os, String hdd, String software) {
         this.processorType = processorType;
         this.ram = ram;
         this.os = os;
         this.hdd = hdd;
+        this.software = software;
     }
 
     public String getProcessorType() {
@@ -44,5 +45,13 @@ public class ComputerDataObject {
 
     public void setHdd(String hdd) {
         this.hdd = hdd;
+    }
+
+    public String getSoftware() {
+        return software;
+    }
+
+    public void setSoftware(String software) {
+        this.software = software;
     }
 }

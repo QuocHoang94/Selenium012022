@@ -13,6 +13,7 @@ import url.Urls;
 import utils.data.DataObjectBuilder;
 
 public class StandardComputerBuyingTest extends BaseTest implements Urls {
+    private double allItemPrices = 0;
     @Description("Buying standard computer with data set")
     @TmsLink("TC_002") @TmsLink("TC_003") @TmsLink("TC_004")
     @Test(dataProvider = "standardCompsDataSet", description = "Buying Cheap Computer")
@@ -21,7 +22,9 @@ public class StandardComputerBuyingTest extends BaseTest implements Urls {
         driver.get(BASE_URL.concat("/build-your-own-computer"));
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
                 new OrderComputerFlow<>(driver, StandardComputerComponent.class, computerDataObject);
-        orderComputerFlow.buildCompSpecAndAddToCart();
+        allItemPrices = allItemPrices + orderComputerFlow.buildCompSpecAndAddToCart();
+        System.out.println("after All item price: " + allItemPrices);
+        orderComputerFlow.verifyShoppingCart(allItemPrices);
     }
 
     @DataProvider

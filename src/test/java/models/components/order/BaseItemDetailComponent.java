@@ -5,7 +5,6 @@ import models.Component;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,7 +14,7 @@ public class BaseItemDetailComponent extends Component {
 
     private final By barNotificationContentSel = By.cssSelector("#bar-notification p");
     private final By productPriceSel = By.cssSelector(".product-price");
-    private final By productQuantitySel = By.cssSelector(".qty-input");
+    private final By productQuantitySel = By.cssSelector(".qty-input valid");
     private final By addToCartBtnSel = By.cssSelector(".add-to-cart-button");
 
     public BaseItemDetailComponent(WebDriver driver, WebElement component) {
@@ -27,8 +26,7 @@ public class BaseItemDetailComponent extends Component {
         return Double.parseDouble(productPriceText);
     }
 
-    // bye short int long
-    @Step("Select product quantity as {quantity}")
+    @Step("Set product quantity as {quantity}")
     public void setProductQuantity(int quantity) {
         WebElement productQuantityElem = component.findElement(productQuantitySel);
         productQuantityElem.clear();
@@ -40,7 +38,7 @@ public class BaseItemDetailComponent extends Component {
         component.findElement(addToCartBtnSel).click();
     }
 
-    @Step("wait Until Item Added To Cart")
+    @Step("Wait until item added to cart")
     public void waitUntilItemAddedToCart() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         String successAddToCartStr = "The product has been added to your shopping cart";

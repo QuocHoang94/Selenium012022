@@ -13,12 +13,12 @@ public class CheapComputerComponent extends ComputerEssentialComponent {
 
     @Override
     @Step("Select processor type as {type}")
-    public void selectProcessorType(String type) {
-        selectCompSpecOption(type);
+    public String selectProcessorType(String type) {
+        return selectCompSpecOption(type);
     }
 
     @Override
-    public void selectRAMType(String type) {
-        selectCompSpecOption(type);
+    public String selectRAMType(String type) {
+        return selectCompSpecOption(type);
     }
 }

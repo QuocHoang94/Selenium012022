@@ -14,17 +14,25 @@ import test_flow.order.OrderComputerFlow;
 import url.Urls;
 import utils.data.DataObjectBuilder;
 
+import java.security.SecureRandom;
+
 public class CheapComputerBuyingTest extends BaseTest implements Urls {
 
+    private double allItemPrices = 0;
+
     @Description("Buying cheap computer with data set")
-    @TmsLink("TC_001") @TmsLink("TC_005")
+    @TmsLink("TC_001")
+    @TmsLink("TC_005")
     @Test(dataProvider = "cheapCompsDataSet", description = "Buying Cheap Computer")
     public void testCheapCompBuying(ComputerDataObject computerDataObject) {
         WebDriver driver = getDriver();
         driver.get(BASE_URL.concat("/build-your-cheap-own-computer"));
+        int itemQuantity = new SecureRandom().nextInt(100) + 1;
         OrderComputerFlow<CheapComputerComponent> orderComputerFlow =
-                new OrderComputerFlow<>(driver, CheapComputerComponent.class, computerDataObject);
-        orderComputerFlow.buildCompSpecAndAddToCart();
+                new OrderComputerFlow<>(driver, CheapComputerComponent.class, computerDataObject, itemQuantity);
+        allItemPrices = allItemPrices + orderComputerFlow.buildCompSpecAndAddToCart();
+        orderComputerFlow.verifyShoppingCart(allItemPrices);
+
     }
 
     @Issue("JIRA_001")
@@ -34,7 +42,7 @@ public class CheapComputerBuyingTest extends BaseTest implements Urls {
     }
 
     @DataProvider
-    public ComputerDataObject[] cheapCompsDataSet(){
+    public ComputerDataObject[] cheapCompsDataSet() {
         String cheapCompDataListLocation = "/src/test/resources/test-data/order/CheapComputerDataList.json";
         return DataObjectBuilder.buildDataObjectFrom(cheapCompDataListLocation, ComputerDataObject[].class);
     }

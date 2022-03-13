@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 @ComponentCssSelector(value = ".header")
 public class HeaderComponent extends Component {
-    private static final By shoppingCartLinkSel = By.cssSelector("#bar-notification a");
+    private static final By shoppingCartLinkSel = By.cssSelector("#topcartlink");
     private static final By searchInputSel = By.cssSelector("form input");
     private static final By searchInputBtnSel = By.cssSelector(".search-box-button");
     private static final By allLinksSel = By.tagName("a");
