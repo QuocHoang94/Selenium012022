@@ -1,6 +1,5 @@
 package test.global;
 
-import driver.DriverFactory;
 import models.pages.CategoryPage;
 import models.pages.HomePage;
 import models.pages.RegisterPage;
@@ -32,7 +31,6 @@ public class FooterTest extends BaseTest implements Urls {
         FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
         footerTestFlow.verifyFooterComponent(RegisterPage.class);
     }
-
 
     @Test
     public void testCategoryPageFooter() {

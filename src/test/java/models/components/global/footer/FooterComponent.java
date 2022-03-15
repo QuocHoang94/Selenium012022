@@ -7,19 +7,25 @@ import org.openqa.selenium.WebElement;
 
 @ComponentCssSelector(".footer")
 public class FooterComponent extends Component {
+
     public FooterComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
-    public InformationColunmComponent informationColunmComponent(){
-        return findComponent(InformationColunmComponent.class, driver);
+
+    public InformationColumnComponent informationColumnComp(){
+        return findComponent(InformationColumnComponent.class, driver);
     }
-    public CustomerServiceColunmComponent customerServiceColunmComponent(){
-        return findComponent(CustomerServiceColunmComponent.class, driver);
+
+    public CustomerServiceColumnComponent customerServiceColumnComp(){
+        return findComponent(CustomerServiceColumnComponent.class, driver);
     }
-    public AccountColunmComponent accountColunmComponent(){
-        return findComponent(AccountColunmComponent.class, driver);
+
+    public AccountColumnComponent accountColumnComp(){
+        return findComponent(AccountColumnComponent.class, driver);
     }
-    public FolllowUsColunmComponent folllowUsColunmComponent(){
-        return findComponent(FolllowUsColunmComponent.class, driver);
+
+    public FollowUsColumnComponent followUsColumnComponent(){
+        return findComponent(FollowUsColumnComponent.class, driver);
     }
+
 }

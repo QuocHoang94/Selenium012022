@@ -1,7 +1,11 @@
 package test_flow.order;
 
 import models.components.cart.CartItemRowComponent;
+import models.components.cart.TotalComponent;
+import models.components.checkout.BillingAddressComponent;
 import models.components.order.ComputerEssentialComponent;
+import models.pages.CheckoutOptionPage;
+import models.pages.CheckoutPage;
 import models.pages.ComputerItemDetailsPage;
 import models.pages.ShoppingCartPage;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +13,7 @@ import org.testng.Assert;
 import test_data.ComputerDataObject;
 
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -96,9 +101,49 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
 
         double currentSubTotals = 0;
         for (CartItemRowComponent cartItemRowComp : cartItemRowComps) {
-            currentSubTotals =  currentSubTotals + cartItemRowComp.subTotal();
+            currentSubTotals = currentSubTotals + cartItemRowComp.subTotal();
 
         }
         Assert.assertEquals(currentSubTotals, allItemPrices, "[ERR] Shopping cart item's subtotal is incorrect!");
+
+        // Verify total summary before checking out
+        Map<String, Double> priceCategories = shoppingCartPage.totalComponent().priceCategories();
+        double checkoutSubTotal = 0;
+        double checkoutOtherFees = 0;
+        double checkoutTotal = 0;
+        for (String priceType : priceCategories.keySet()) {
+            if (priceType.startsWith("Sub-Total")) {
+                checkoutSubTotal = priceCategories.get(priceType);
+            } else if (priceType.startsWith("Total")) {
+                checkoutTotal = priceCategories.get(priceType);
+            } else {
+                checkoutOtherFees = checkoutOtherFees + priceCategories.get(priceType);
+            }
+        }
+        Assert.assertEquals(checkoutSubTotal, currentSubTotals ,"[ERR] Checkout sub-total is incorrect!");
+        Assert.assertEquals(checkoutSubTotal + checkoutOtherFees, checkoutTotal ,"[ERR] Checkout total is incorrect!");
     }
+
+    public void agreeTosAndCheckoutAsGuest(){
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        shoppingCartPage.totalComponent().agreeTOS().clickOnCheckoutBtn();
+        new CheckoutOptionPage(driver).clickOnCheckoutAsGuestBtn();
+    }
+
+    public void inputBillingAddress(){
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        BillingAddressComponent billingAddressComp = checkoutPage.billingAddressComp();
+        billingAddressComp.selectInputNewAddress();
+        billingAddressComp.inputFirstname("Teo");
+        billingAddressComp.inputLastname("LastName");
+        billingAddressComp.inputEmail("teo@sth.com");
+        billingAddressComp.selectCountry("United States");
+        billingAddressComp.selectState("Alabama");
+        billingAddressComp.inputCity("City");
+        billingAddressComp.inputAdd1("Address 1");
+        billingAddressComp.inputZIPCode("999");
+        billingAddressComp.inputPhoneNo("999-999-9999");
+        billingAddressComp.clickOnContinueBtn();
+    }
+
 }

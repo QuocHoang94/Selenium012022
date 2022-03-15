@@ -12,53 +12,49 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FooterTestFlow {
+
     private WebDriver driver;
 
     public FooterTestFlow(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void verifyFooterComponent(Class<? extends BasePage> pageClass) {
+    public void verifyFooterComponent(Class<? extends BasePage> pageClass){
         BasePage page = null;
         try {
             page = pageClass.getConstructor(WebDriver.class).newInstance(driver);
-        } catch (Exception e) {
+        } catch (Exception e){
             e.printStackTrace();
         }
         FooterComponent footerComponent = page.footerComponent();
-
         verifyInformationColumn(footerComponent);
+
+        // JUST AN EXAMPLE to handle different flow on pages
         if(page instanceof HomePage){
-            System.out.println("HomePage | verifyCustomerColumn...");
+            System.out.println("HomePage | verifyCustomerColumn..... ");
             verifyCustomerColumn(footerComponent);
         }
-        verifyMyAccountColumn(footerComponent);
-        verifyFollowUsColumn(footerComponent);
     }
 
     private void verifyInformationColumn(FooterComponent footerComponent) {
-        InformationColunmComponent informationColunmComponent =
-                footerComponent.informationColunmComponent();
-        String actualColumnTitle = informationColunmComponent.headerElem().getText().trim();
+        InformationColumnComponent informationColumnComp = footerComponent.informationColumnComp();
+        String actualColumnTitle = informationColumnComp.headerElem().getText().trim();
         String expectedTitle = "INFORMATION";
         Assert.assertEquals(actualColumnTitle, expectedTitle, "[ERR] Column Title is incorrect!");
-
         List<String> expectedLinkTexts = Arrays.asList(
                 "Sitemap", "Shipping & Returns", "Privacy Notice", "Conditions of Use",
                 "About us", "Contact us");
         List<String> expectedLinkHrefs = Arrays.asList(
                 "/sitemap", "/shipping-returns", "/privacy-policy", "/conditions-of-use",
                 "/about-us", "/contactus");
-        verifyColumnData(informationColunmComponent, expectedLinkTexts, expectedLinkHrefs);
+        verifyColumnData(informationColumnComp, expectedLinkTexts, expectedLinkHrefs);
     }
 
     private void verifyCustomerColumn(FooterComponent footerComponent) {
-        CustomerServiceColunmComponent customerServiceColumnComp =
-                footerComponent.customerServiceColunmComponent();
+        CustomerServiceColumnComponent customerServiceColumnComp = footerComponent.customerServiceColumnComp();
         String actualColumnTitle = customerServiceColumnComp.headerElem().getText().trim();
         String expectedTitle = "CUSTOMER SERVICE";
         Assert.assertEquals(actualColumnTitle, expectedTitle, "[ERR] Column Title is incorrect!");
-
         List<String> expectedLinkTexts = Arrays.asList(
                 "Search", "News", "Blog", "Recently viewed products",
                 "Compare products list", "New products");
@@ -66,38 +62,6 @@ public class FooterTestFlow {
                 "/search", "/news", "/blog", "/recentlyviewedproducts",
                 "/compareproducts", "/newproducts");
         verifyColumnData(customerServiceColumnComp, expectedLinkTexts, expectedLinkHrefs);
-    }
-
-    private void verifyMyAccountColumn(FooterComponent footerComponent) {
-        AccountColunmComponent accountColunmComponent =
-                footerComponent.accountColunmComponent();
-        String actualColumnTitle = accountColunmComponent.headerElem().getText().trim();
-        String expectedTitle = "MY ACCOUNT";
-        Assert.assertEquals(actualColumnTitle, expectedTitle, "[ERR] Column Title is incorrect!");
-
-        List<String> expectedLinkTexts = Arrays.asList(
-                "My account", "Orders", "Addresses", "Shopping cart",
-                "Wishlist");
-        List<String> expectedLinkHrefs = Arrays.asList(
-                "/customer/info", "/customer/orders", "/customer/addresses", "/cart",
-                "/wishlist");
-        verifyColumnData(accountColunmComponent, expectedLinkTexts, expectedLinkHrefs);
-    }
-
-    private void verifyFollowUsColumn(FooterComponent footerComponent) {
-        FolllowUsColunmComponent folllowUsColunmComponent =
-                footerComponent.folllowUsColunmComponent();
-        String actualColumnTitle = folllowUsColunmComponent.headerElem().getText().trim();
-        String expectedTitle = "FOLLOW US";
-        Assert.assertEquals(actualColumnTitle, expectedTitle, "[ERR] Column Title is incorrect!");
-
-        List<String> expectedLinkTexts = Arrays.asList(
-                "Facebook", "Twitter", "RSS", "YouTube",
-                "Google+");
-        List<String> expectedLinkHrefs = Arrays.asList(
-                "http://www.facebook.com/nopCommerce", "https://twitter.com/nopCommerce", "/news/rss/1", "http://www.youtube.com/user/nopCommerce",
-                "https://plus.google.com/+nopcommerce");
-        verifyColumnData(folllowUsColunmComponent, expectedLinkTexts, expectedLinkHrefs);
     }
 
     private void verifyColumnData(FooterColumnComponent footerColumnComp, List<String> expectedLinkTexts, List<String> expectedLinkHrefs) {
@@ -109,26 +73,24 @@ public class FooterTestFlow {
             actualLinkHrefs.add(link.getAttribute("href"));
         }
 
-        if (actualLinkTexts.isEmpty() || actualLinkHrefs.isEmpty()) {
+        if(actualLinkTexts.isEmpty() || actualLinkHrefs.isEmpty()){
             Assert.fail("[ERR] Texts or hyperlinks is empty");
         }
 
-        //Link text verification
+        // Link text verification
         Assert.assertTrue(actualLinkTexts.size() == expectedLinkTexts.size(),
                 "[ERR] Texts in footer column is incorrect");
         for (String actualLinkText : actualLinkTexts) {
             System.out.println(actualLinkText);
-            Assert.assertTrue(expectedLinkTexts.contains(actualLinkText), "[ERR]" + actualLinkText + "is incorrect value!");
+            Assert.assertTrue(expectedLinkTexts.contains(actualLinkText), "[ERR] " + actualLinkText + " is incorrect value!");
         }
 
-        // Verify Link href
+        // Verify link href
         Assert.assertTrue(actualLinkHrefs.size() == expectedLinkHrefs.size(),
                 "[ERR] Texts in footer column is incorrect");
         for (String actualLinkHref : actualLinkHrefs) {
             System.out.println(actualLinkHref);
-            Assert.assertTrue(actualLinkHrefs.contains(actualLinkHref), "[ERR]" + actualLinkHref + "is incorrect value!");
+            Assert.assertTrue(actualLinkHrefs.contains(actualLinkHref), "[ERR] " + actualLinkHref + " is incorrect value!");
         }
-
     }
-
 }

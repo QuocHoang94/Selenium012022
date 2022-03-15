@@ -1,6 +1,7 @@
 package test_data;
 
 public class User {
+
     private String name;
     private int age;
 
@@ -29,7 +30,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", age='" + age + '\'' +
                 '}';
     }
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 @ComponentCssSelector(".product-essential")
 public class CheapComputerComponent extends ComputerEssentialComponent {
+
     public CheapComputerComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
@@ -18,7 +19,9 @@ public class CheapComputerComponent extends ComputerEssentialComponent {
     }
 
     @Override
+    @Step("Select RAM type as {type}")
     public String selectRAMType(String type) {
         return selectCompSpecOption(type);
     }
+
 }

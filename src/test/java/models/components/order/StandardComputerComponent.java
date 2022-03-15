@@ -11,7 +11,8 @@ import java.util.List;
 
 @ComponentCssSelector(".product-essential")
 public class StandardComputerComponent extends ComputerEssentialComponent {
-    public static final By productAttributeSel = By.xpath("//select[contains(@id,'product_attribute')]");
+
+    public static final By productAttributeSel = By.xpath("//select[contains(@id, 'product_attribute')]");
     public static final int PROCESSOR_DROPDOWN_INDEX = 0;
     public static final int RAM_DROPDOWN_INDEX = 1;
 
@@ -35,26 +36,19 @@ public class StandardComputerComponent extends ComputerEssentialComponent {
 
     private String selectOption(WebElement dropdownElem, String prefixValue){
         Select select = new Select(dropdownElem);
-        /*
-        2.2 GHz
-        1. Get all option texts : 2.2 GHz Intel Pentium Core....; 2.5GHz Intel Pentium Core.....
-        2. Get the option which starts with the prefix
-        3. Get FULL text of that option
-        4. selectBuyVisibleText(FULL)
-        * */
-//        Get all options
         List<WebElement> allOptions = select.getOptions();
         String fullStrOption = null;
         for (WebElement option : allOptions) {
             String currentOptionText = option.getText();
-            String optionText = option.getText().trim().replace(" ", ""); // 2.2GHzIntel Pentium Core
-            if (optionText.startsWith(prefixValue)) {
+            String optionText = currentOptionText.trim().replaceAll(" ", ""); // 2.2GHzIntelPentiumCore
+            if(optionText.startsWith(prefixValue)){
                 fullStrOption = currentOptionText;
                 break;
             }
         }
-        if (fullStrOption == null) {
-            throw new IllegalArgumentException("[ERR] the option " + prefixValue + "is not in the dropdown");
+
+        if(fullStrOption == null){
+            throw new IllegalArgumentException("[ERR] the option " + prefixValue + " is not in the dropdown!");
         }
 
         select.selectByVisibleText(fullStrOption);

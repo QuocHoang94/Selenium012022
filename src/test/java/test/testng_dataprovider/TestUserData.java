@@ -8,10 +8,10 @@ import utils.data.DataObjectBuilder;
 
 public class TestUserData {
 
-    @Test(dataProvider = "userData") // Iterate-able collection
+    @Test(dataProvider = "userData")
     public void testUserDataCollection(User userData) {
-        Assert.assertTrue(userData.getName().startsWith("T"),"[ERR] name is not started with T");
-        Assert.assertTrue(userData.getAge() >= 18,"[ERR] Age is less than 18");
+        Assert.assertTrue(userData.getName().startsWith("T"), "[ERR] name is not started with T");
+        Assert.assertTrue(userData.getAge() >=18, "[ERR] Age is less than 18");
     }
 
     @DataProvider()
