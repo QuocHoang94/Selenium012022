@@ -3,9 +3,11 @@ package models;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,10 +16,12 @@ public class Component {
 
     protected WebDriver driver;
     protected WebElement component;
+    protected WebDriverWait wait;
 
     public Component(WebDriver driver, WebElement component) {
         this.driver = driver;
         this.component = component;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
     public <T extends Component> T findComponent(Class<T> componentClass, WebDriver driver){

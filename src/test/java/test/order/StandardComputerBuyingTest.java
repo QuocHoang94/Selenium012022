@@ -8,6 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.BaseTest;
 import test_data.ComputerDataObject;
+import test_data.CreditCardType;
+import test_data.PaymentMethod;
 import test_flow.order.OrderComputerFlow;
 import url.Urls;
 import utils.data.DataObjectBuilder;
@@ -21,7 +23,7 @@ public class StandardComputerBuyingTest extends BaseTest implements Urls {
     @Description("Buying standard computer with data set")
     @TmsLink("TC_002") @TmsLink("TC_003") @TmsLink("TC_004")
     @Test(dataProvider = "standardCompsDataSet", description = "Buying Cheap Computer")
-    public void testStandardCompBuying(ComputerDataObject computerDataObject) {
+    public void testStandardCompBuying(ComputerDataObject computerDataObject) throws InterruptedException {
         WebDriver driver = getDriver();
         driver.get(BASE_URL.concat("/build-your-own-computer"));
         int itemQuantity = new SecureRandom().nextInt(100) + 1;
@@ -31,6 +33,12 @@ public class StandardComputerBuyingTest extends BaseTest implements Urls {
         orderComputerFlow.verifyShoppingCart(allItemPrices);
         orderComputerFlow.agreeTosAndCheckoutAsGuest();
         orderComputerFlow.inputBillingAddress();
+        orderComputerFlow.inputShippingAddress();
+        orderComputerFlow.selectShippingMethod();
+        orderComputerFlow.selectPaymentMethod(PaymentMethod.CREDIT_CARD);
+        orderComputerFlow.inputPaymentInfo(CreditCardType.VISA);
+        orderComputerFlow.confirmOrder();
+        allItemPrices = 0;
     }
 
     @DataProvider

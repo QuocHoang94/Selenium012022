@@ -3,6 +3,8 @@ package test_flow.order;
 import models.components.cart.CartItemRowComponent;
 import models.components.cart.TotalComponent;
 import models.components.checkout.BillingAddressComponent;
+import models.components.checkout.PaymentInformationComponent;
+import models.components.checkout.PaymentMethodComponent;
 import models.components.order.ComputerEssentialComponent;
 import models.pages.CheckoutOptionPage;
 import models.pages.CheckoutPage;
@@ -11,9 +13,13 @@ import models.pages.ShoppingCartPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import test_data.ComputerDataObject;
+import test_data.CreditCardType;
+import test_data.PaymentMethod;
+import test_data.UserDataObject;
+import utils.data.DataObjectBuilder;
 
-import java.util.List;
-import java.util.Map;
+import java.security.SecureRandom;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,6 +30,9 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
     private final ComputerDataObject computerDataObject;
     private int itemQuantity;
     private double totalItemPrice;
+    private PaymentMethod paymentMethod = PaymentMethod.COD;
+    private CreditCardType creditCardType;
+    private UserDataObject defaultCheckoutUser;
 
     public OrderComputerFlow(WebDriver driver, Class<T> computerEssentialComponent, ComputerDataObject computerDataObject) {
         this.driver = driver;
@@ -131,19 +140,107 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
     }
 
     public void inputBillingAddress(){
+        String defaultCheckoutUSerJSONLoc = "/src/test/resources/test-data/DefaultCheckoutUser.json";
+        defaultCheckoutUser = DataObjectBuilder.buildDataObjectFrom(defaultCheckoutUSerJSONLoc, UserDataObject.class);
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         BillingAddressComponent billingAddressComp = checkoutPage.billingAddressComp();
         billingAddressComp.selectInputNewAddress();
-        billingAddressComp.inputFirstname("Teo");
-        billingAddressComp.inputLastname("LastName");
-        billingAddressComp.inputEmail("teo@sth.com");
-        billingAddressComp.selectCountry("United States");
-        billingAddressComp.selectState("Alabama");
-        billingAddressComp.inputCity("City");
-        billingAddressComp.inputAdd1("Address 1");
-        billingAddressComp.inputZIPCode("999");
-        billingAddressComp.inputPhoneNo("999-999-9999");
+        billingAddressComp.inputFirstname(defaultCheckoutUser.getFirstname());
+        billingAddressComp.inputLastname(defaultCheckoutUser.getLastname());
+        billingAddressComp.inputEmail(defaultCheckoutUser.getEmail());
+        billingAddressComp.selectCountry(defaultCheckoutUser.getCountry());
+        billingAddressComp.selectState(defaultCheckoutUser.getState());
+        billingAddressComp.inputCity(defaultCheckoutUser.getCity());
+        billingAddressComp.inputAdd1(defaultCheckoutUser.getAdd1());
+        billingAddressComp.inputZIPCode(defaultCheckoutUser.getZipCode());
+        billingAddressComp.inputPhoneNo(defaultCheckoutUser.getPhoneNum());
         billingAddressComp.clickOnContinueBtn();
+    }
+
+    public void inputShippingAddress(){
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.shippingAddressComp().clickOnContinueBtn();
+    }
+
+    public void selectShippingMethod(){
+        List<String> shippingMethods = Arrays.asList("Next Day Air", "Ground", "2nd Day Air");
+        String randomShippingMethod = shippingMethods.get(new SecureRandom().nextInt(shippingMethods.size()));
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.shippingMethodComp().selectShippingMethod(randomShippingMethod);
+        checkoutPage.shippingMethodComp().clickOnContinueBtn();
+    }
+
+    public void selectPaymentMethod(){
+        this.paymentMethod = PaymentMethod.COD;
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.paymentMethodComp().selectCODMethod();
+        checkoutPage.paymentMethodComp().clickOnContinueBtn();
+    }
+
+    public void selectPaymentMethod(PaymentMethod paymentMethod){
+        if(paymentMethod == null){
+            throw new IllegalArgumentException("Payment method can't be null!");
+        }
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        PaymentMethodComponent paymentMethodComp = checkoutPage.paymentMethodComp();
+        switch (paymentMethod){
+            case CHECK_MONEY_ORDER:
+                paymentMethodComp.selectCheckMoneyOrderMethod();
+                this.paymentMethod = PaymentMethod.CHECK_MONEY_ORDER;
+                break;
+            case CREDIT_CARD:
+                paymentMethodComp.selectCreditCardMethod();
+                this.paymentMethod = PaymentMethod.CREDIT_CARD;
+                break;
+            case PURCHASE_ORDER:
+                paymentMethodComp.selectPurchaseOrderMethod();
+                this.paymentMethod = PaymentMethod.PURCHASE_ORDER;
+                break;
+            default:
+                paymentMethodComp.selectCODMethod();
+        }
+
+        checkoutPage.paymentMethodComp().clickOnContinueBtn();
+    }
+
+    // TODO: It's good to have a default payment info object to be used here.
+    // Test Card Number: https://www.paypalobjects.com/en_GB/vhelp/paypalmanager_help/credit_card_numbers.htm
+    public void inputPaymentInfo(CreditCardType creditCardType){
+        if(creditCardType == null){
+            throw new IllegalArgumentException("Credit card type can't be null");
+        } else {
+            this.creditCardType = creditCardType;
+        }
+
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        PaymentInformationComponent paymentInformationComp = checkoutPage.paymentInformationComp();
+
+        if(paymentMethod.equals(PaymentMethod.PURCHASE_ORDER)){
+            // This can be dynamic as well
+            paymentInformationComp.inputPurchaseOrderNum("123");
+        }
+
+        if(paymentMethod.equals(PaymentMethod.CREDIT_CARD)){
+            paymentInformationComp.selectCarType(creditCardType);
+            paymentInformationComp.inputCardHolderName(
+                    defaultCheckoutUser.getFirstname() + " " + defaultCheckoutUser.getLastname());
+            String cardNumber = creditCardType.equals(CreditCardType.VISA) ? "4012888888881881" : "6011000990139424";
+            paymentInformationComp.inputCardNumber(cardNumber);
+
+            // Select current month and next
+            Calendar calendar = new GregorianCalendar();
+            paymentInformationComp.inputExpiredMonth(String.valueOf(calendar.get(Calendar.MONTH) + 1));
+            paymentInformationComp.inputExpiredYear(String.valueOf(calendar.get(Calendar.YEAR) + 1));
+
+            paymentInformationComp.inputCardCode("123");
+        }
+
+        paymentInformationComp.clickOnContinueBtn();
+    }
+
+    public void confirmOrder(){
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.confirmOrderComp().clickOnContinueBtn();
     }
 
 }
