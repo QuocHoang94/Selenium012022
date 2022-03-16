@@ -12,16 +12,22 @@ import test_flow.order.OrderComputerFlow;
 import url.Urls;
 import utils.data.DataObjectBuilder;
 
+import java.security.SecureRandom;
+
 public class StandardComputerBuyingTest extends BaseTest implements Urls {
+
     private double allItemPrices = 0;
+
     @Description("Buying standard computer with data set")
     @TmsLink("TC_002") @TmsLink("TC_003") @TmsLink("TC_004")
     @Test(dataProvider = "standardCompsDataSet", description = "Buying Cheap Computer")
     public void testStandardCompBuying(ComputerDataObject computerDataObject) {
+        System.out.println("before All item price: " + allItemPrices);
         WebDriver driver = getDriver();
         driver.get(BASE_URL.concat("/build-your-own-computer"));
+        int itemQuantity = new SecureRandom().nextInt(100) + 1;
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow =
-                new OrderComputerFlow<>(driver, StandardComputerComponent.class, computerDataObject);
+                new OrderComputerFlow<>(driver, StandardComputerComponent.class, computerDataObject, itemQuantity);
         allItemPrices = allItemPrices + orderComputerFlow.buildCompSpecAndAddToCart();
         System.out.println("after All item price: " + allItemPrices);
         orderComputerFlow.verifyShoppingCart(allItemPrices);

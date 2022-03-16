@@ -47,14 +47,14 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
         String ramFullStr = compEssentialComponent.selectRAMType(computerDataObject.getRam());
         double additionalRAMPrice = extractAdditionalPrice(ramFullStr);
 
-        if (itemQuantity != 0) {
+        if(itemQuantity !=0 ){
             compEssentialComponent.setProductQuantity(itemQuantity);
         }
         String hddFullStr = compEssentialComponent.selectHDD(computerDataObject.getHdd());
         double additionalHDDPrice = extractAdditionalPrice(hddFullStr);
 
         double additionalOsPrice = 0;
-        if (computerDataObject.getOs() != null) {
+        if(computerDataObject.getOs() != null){
             String osFullStr = compEssentialComponent.selectOS(computerDataObject.getOs());
             additionalOsPrice = extractAdditionalPrice(osFullStr);
         }
@@ -79,17 +79,17 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
         return totalItemPrice;
     }
 
-    private double extractAdditionalPrice(String itemStr) {
+    private double extractAdditionalPrice(String itemStr){
         double price = 0;
         Pattern pattern = Pattern.compile("\\[(.*?)\\]");
         Matcher matcher = pattern.matcher(itemStr);
-        if (matcher.find()) {
+        if(matcher.find()){
             price = Double.parseDouble(matcher.group(1).replaceAll("[-+]", ""));
         }
         return price;
     }
 
-    public void verifyShoppingCart(double allItemPrices) {
+    public void verifyShoppingCart(double allItemPrices){
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         List<CartItemRowComponent> cartItemRowComps = shoppingCartPage.cartItemRowComponents();
         Assert.assertTrue(cartItemRowComps.size() > 0, "[ERR] No item displayed in shopping cart!");
@@ -101,4 +101,5 @@ public class OrderComputerFlow<T extends ComputerEssentialComponent> {
         }
         Assert.assertEquals(currentSubTotals, allItemPrices, "[ERR] Shopping cart item's subtotal is incorrect!");
     }
+
 }

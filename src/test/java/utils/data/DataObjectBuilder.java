@@ -13,13 +13,15 @@ public class DataObjectBuilder {
         T data = null;
         String currentProjectLocation = System.getProperty("user.dir");
 
-        try (Reader jsonContentReader = Files.newBufferedReader(Paths.get(currentProjectLocation + jsonDataFileLocation))) {
-
+        try (
+                Reader jsonContentReader = Files.newBufferedReader(Paths.get(currentProjectLocation + jsonDataFileLocation));
+        ) {
             Gson gson = new Gson();
             data = gson.fromJson(jsonContentReader, dataType);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return data;
     }
 }

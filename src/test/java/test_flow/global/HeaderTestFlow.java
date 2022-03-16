@@ -15,11 +15,11 @@ public class HeaderTestFlow {
         this.driver = driver;
     }
 
-    public void verifyHeaderComponent(Class<? extends BasePage> pageClass) {
+    public void verifyHeaderComponent(Class<? extends BasePage> pageClass){
         BasePage page = null;
         try {
             page = pageClass.getConstructor(WebDriver.class).newInstance(driver);
-        } catch (Exception e) {
+        } catch (Exception e){
             e.printStackTrace();
         }
 
@@ -29,12 +29,11 @@ public class HeaderTestFlow {
         System.out.println("Logo link: " + logoComp.logoLinkElem().getAttribute("href"));
         System.out.println("Logo img src: " + logoComp.logoImgElem().getAttribute("src"));
 
-
         Dimension logoSize = logoComp.logoImgElem().getSize();
         int logoWidth = logoSize.getWidth();
         int logoHeight = logoSize.getHeight();
         boolean isImgBroken = logoWidth < 300 || logoHeight < 40;
-        Assert.assertTrue(logoComp.logoImgElem().isDisplayed(),"[ERR] Logo is invisible");
-        Assert.assertFalse(isImgBroken,"[ERR] Logo is broken");
+        Assert.assertTrue(logoComp.logoImgElem().isDisplayed(), "[ERR] Logo is invisible!");
+        Assert.assertFalse(isImgBroken, "[ERR] Logo img is broken!");
     }
 }

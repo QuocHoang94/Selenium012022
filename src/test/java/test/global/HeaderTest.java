@@ -6,7 +6,6 @@ import models.pages.HomePage;
 import models.pages.RegisterPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import test.BaseTest;
 import test_flow.global.HeaderTestFlow;
 import url.Urls;
 
