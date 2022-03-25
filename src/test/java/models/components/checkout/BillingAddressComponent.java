@@ -18,6 +18,7 @@ public class BillingAddressComponent extends Component {
     private final static By emailSel = By.id("BillingNewAddress_Email");
     private final static By selectCountryDropdownSel = By.id("BillingNewAddress_CountryId");
     private final static By selectStateDropdownSel = By.id("BillingNewAddress_StateProvinceId");
+    private final static By loadingStateProgressBarSel = By.id("states-loading-progress");
     private final static By citySel = By.id("BillingNewAddress_City");
     private final static By add1Sel = By.id("BillingNewAddress_Address1");
     private final static By zipCodeSel = By.id("BillingNewAddress_ZipPostalCode");
@@ -55,8 +56,7 @@ public class BillingAddressComponent extends Component {
     public void selectCountry(String country){
         Select select = new Select(component.findElement(selectCountryDropdownSel));
         select.selectByVisibleText(country);
-
-        // TODO: wait until country value loaded
+        wait.until(ExpectedConditions.invisibilityOf(component.findElement(loadingStateProgressBarSel)));
     }
 
     @Step(value = "Select state/province as {state}")
