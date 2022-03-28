@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Regression" parallel="tests">
+    <test thread-count="4" name="Group 2" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.order.CheapComputerBuyingTest"/>
+            <class name="test.testng_dataprovider.TestUserData"/>
+        </classes>
+    </test> <!-- Group 2 -->
+    <test thread-count="4" name="Group 1" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.pom.LoginTest"/>
+            <class name="test.order.StandardComputerBuyingTest"/>
+        </classes>
+    </test> <!-- Group 1 -->
+    <test thread-count="4" name="Group 4" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.global.HeaderTest"/>
+            <class name="test.global.TestNGAssertionTypes"/>
+        </classes>
+    </test> <!-- Group 4 -->
+    <test thread-count="4" name="Group 3" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.pages.HomePageTest"/>
+            <class name="test.global.FooterTest"/>
+        </classes>
+    </test> <!-- Group 3 -->
+</suite> <!-- Regression -->
